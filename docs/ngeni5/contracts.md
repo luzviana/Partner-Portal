@@ -28,3 +28,20 @@ Observable need: approved users access the portal and each independent service w
 Provider changes: unknown until existing contract is inspected. API/claims, registration, configuration and deployment effects require SSO owner assessment. Domain data/schema changes in SSO are not requested. Partner-Portal owns clients, role/grant mapping, sessions and negative tests. No edits to SSO are authorized here.
 
 Compatibility: preserve existing clients, use approved claims and deprecation policy. Rollback: disable the new consumer registration and local routing without disrupting existing consumers. Acceptance: login/logout, revocation, wrong audience, forged solution context, support access and direct-native service tests. Required approvals: SSO owner plus applicable EA and user scope approval before implementation.
+
+## Proposed security acceptance evidence
+
+These are design criteria for EA and owner review, not executed tests or implemented controls. Confirm scope and measurable limits before implementation.
+
+| Boundary | Required evidence |
+| --- | --- |
+| SSO and authorization | Use the existing SSO baseline in ADR-0004. Direct URLs and portal links enforce identical application-local permissions. Wrong issuer/audience, expired tokens, forged organization context and guessed resource IDs fail closed. Verify revocation and logout separately for purchased services. |
+| Product and pricing | Search, ID lookup, export and quote evaluation enforce consistent eligibility. Prevent cross-partner disclosure of negotiated prices. Distinguish public catalog data from customer-sensitive discounts. |
+| Solution isolation | Prove isolation across credentials, databases, files, queues, caches, telemetry, backups and AI context. Include restore, export, replay and support workflows. |
+| HubSpot | Define field authority and conflict policy. Verify callbacks using provider-supported mechanisms, deduplicate deliveries, bound retries and reconcile by readback. CRM identifiers alone never authorize access. |
+| Quote approval | Bind approval to immutable quote revision and price evidence; specify edit invalidation and separation of preparation, approval and override responsibilities. |
+| Discovery and imports | Bind collectors to approved solution/environment and scan scope. Constrain egress, malicious imports, file parsing and resource consumption. |
+| AI builder | Authorize retrieval and export; treat retrieved content as untrusted. No autonomous commercial commitment or infrastructure mutation. Establish retention, provider use terms and deletion/export behavior. |
+| Operations | Specify elevation, credential rotation, audit protection, recovery objectives, restore evidence, incident ownership and vendor exit. Numerical objectives remain owner decisions. |
+
+Map accepted evidence into existing backlog items during findings reconciliation. No implementation authority follows from this table.

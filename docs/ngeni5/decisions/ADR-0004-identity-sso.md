@@ -8,7 +8,9 @@
 
 ## Context
 
-EA catalogs SSO as the shared identity capability.
+EA catalogs SSO as the shared identity capability. SSO baseline `ad5337ceb5077afb3040a59ee939e959b81dcae3` includes ADR-001 (Keycloak selected subject to proof of concept and technical approvals), ADR-002 (decentralized application authorization), and ADR-003 (direct application authentication). This existing provider decision does not assert production readiness or authorize Partner-Portal configuration.
+
+Each application initiates its approved OIDC flow and enforces local membership, roles and resource permissions. Existing identity sessions provide SSO. Portal discovery/navigation does not create access rights or make the portal a mandatory authentication intermediary. Identity self-service must not acquire a product launcher/catalog through this proposal.
 
 ## Proposed direction
 
