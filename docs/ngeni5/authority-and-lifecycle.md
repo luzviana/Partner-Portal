@@ -1,5 +1,6 @@
 # Authority, placement and lifecycle design
 
+**Scope revision:** [Latest reviewed priority plan](priority-plan.md) supersedes earlier five-service and P0–P3 sequencing. HubSpot integration is Priority 1, proposal-only Marketplace Priority 2, cross-page AI Sales Support Priority 3. Site Designer/multisite and Discovery are Priority 4, not initialized. The controls below remain applicable to relevant capabilities, not authority to launch deferred work.
 Author revision 1; proposed design for PP-EA-01/03/10. No approved topology, retention policy or executed isolation evidence is asserted. Accountable roles below are proposed assignments; named acceptance remains a gate in [open decisions](decisions/open-decisions.md).
 
 ## Authority model

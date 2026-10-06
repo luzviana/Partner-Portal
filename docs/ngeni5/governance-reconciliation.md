@@ -1,5 +1,6 @@
 # EA governance reconciliation draft
 
+**Scope revision:** [Latest reviewed priority plan](priority-plan.md) supersedes earlier five-service and P0–P3 sequencing. HubSpot integration is Priority 1, proposal-only Marketplace Priority 2, cross-page AI Sales Support Priority 3. Site Designer/multisite and Discovery are Priority 4, not initialized. The controls below remain applicable to relevant capabilities, not authority to launch deferred work.
 The table preserves pre-review draft-3 corrections as history, not approvals. Current author revision 1 incorporates EA v2 through the [finding register](reviews/author-revision-1.md), [authority/lifecycle model](authority-and-lifecycle.md) and [first-use gates](release-and-operations.md). These current documents and the rewritten proposal supersede any less-specific earlier wording. No exception or approval is inferred.
 
 | Topic | Revision-2 gap | Draft-3 position | Required EA disposition |

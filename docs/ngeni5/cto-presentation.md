@@ -1,4 +1,6 @@
-# CTO presentation review draft 3
+# Historical CTO presentation review draft 3
+
+**Superseded by the latest reviewed user scope in [priority plan](priority-plan.md). This deck predates HubSpot-first priorities, renamed/consolidated capabilities and mandatory 30-day proposals. Use [current CTO narrative](decision-brief.md); do not present these slides as current.**
 
 Prepared from canonical architecture commit `abfaf501324deaefdf3c747b2d085544e37bb21c`. This deck summarizes the author revision responding to EA v2; it does not claim a later EA disposition or approval. All user/EA/affected-owner/Security gates remain in force.
 

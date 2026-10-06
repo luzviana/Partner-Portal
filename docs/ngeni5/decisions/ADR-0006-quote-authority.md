@@ -1,5 +1,6 @@
 # ADR-0006 Quote authority and solution handoff
 
+**Latest user scope:** [HubSpot-first priority plan](../priority-plan.md) supersedes old five-service/phase assumptions. AI Sales Support is cross-page with no menu item; Site Designer includes multisite; Site Designer/Discovery are deferred and not initialized. Existing review and control obligations remain.
 - Status: **Proposed**, except the explicit review gate which applies immediately.
 - Date: 2026-10-06
 - Accountable roles: Commercial + technical validator + package provider; named acceptance pending.
@@ -31,3 +32,7 @@ Proposed; compared alternatives incorporated, hard-gate evidence and selection p
 Evaluate HubSpot against QuoteWerks, conditional ERPNext and custom using common hard gates. Bind configuration digest/rule version and commercial evidence to quote revision; prohibit native CPQ edit/issue bypass. Choose exchange module/adapter/service with durable owner and TCO before R15, not automatically a separate runtime. R19-R24 execute proof only after approval.
 
 Incorporated design: [quote-and-crm-controls.md](../quote-and-crm-controls.md). Decision gate: OD-03/09 in [open decisions](open-decisions.md). Acceptance mapping and evidence are in the [finding register](../reviews/author-revision-1.md).
+
+## Current commercial requirement
+
+Marketplace produces proposals valid for 30 days, stored in HubSpot with complete price/BOM and surfaced in Opportunities. No direct sale/checkout/payment. Thin UI plus proven HubSpot capability is the leading option; independent CPQ is an escalation alternative. R56/R57 bind expiry/persistence tests. Exact clock semantics, commercial price honoring and actual account capability remain gates.

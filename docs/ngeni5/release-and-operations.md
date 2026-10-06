@@ -1,5 +1,6 @@
 # First exposure, delivery and operations gates
 
+**Scope revision:** [Latest reviewed priority plan](priority-plan.md) supersedes earlier five-service and P0–P3 sequencing. HubSpot integration is Priority 1, proposal-only Marketplace Priority 2, cross-page AI Sales Support Priority 3. Site Designer/multisite and Discovery are Priority 4, not initialized. The controls below remain applicable to relevant capabilities, not authority to launch deferred work.
 Proposed PP-EA-06/09/12 response. Documentation is the only authorized activity. These checklists describe future evidence; no checklist has passed. No service may infer permission from a dependency passing, an EA agent report, a documentation merge or silence.
 
 ## Two different release checklists
@@ -18,24 +19,17 @@ Proposed PP-EA-06/09/12 response. Documentation is the only authorized activity.
 
 Unknown controls, operators or policy values block that service's exposure. Material exceptions require applicable independent approval; none are accepted here. SYN to REAL is a new gate, not a data-file substitution.
 
-## Gate attachment to first use
+## Gate attachment to current first use
 
-| First-use items | Accountable operating role (named acceptance pending) | Required before first use |
+| Priority / items | Operating owner | Gate |
 | --- | --- | --- |
-| R09-R11 platform, portal, identity | Platform operator, application owner, SSO owner | OD-01/05/08, SYN or REAL, service registration and access evidence |
-| R12-R14 catalog/pricing/Marketplace | Catalog and commercial steward plus Marketplace operator | OD-02/06, protected-price lifecycle, contract baseline and applicable checklist |
-| R15 package capability | Selected package provider operator | OD-09, record lifecycle, schema/compatibility and restore proofs |
-| R16-R18 CRM | CRM adapter operator and CRM administrator | OD-04, scoped account grants, reconciliation limits and applicable checklist |
-| R19-R24 quote/render | Quote operator, Commercial and technical validator | OD-03/07, native bypass proof, expiry guards, file controls and checklist |
-| R26 initial pilot exit | Product accepts scope; Platform/Security attest evidence | All prior applicable checklists already passed, integrated restore/journey evidence and unresolved exclusions visible |
-| R27-R28 Floor Plan | Planning operator / Solutions | Reconfirmed vendor rights/fidelity, upload/egress and isolated plan recovery |
-| R29-R30 Discovery import | Discovery operator / customer scope owner | Import only; observation lifecycle, malicious-file containment and no scanning |
-| R31-R33 Multi-Site | Multi-Site operator / solution owner | Isolated staged data, grants, immutable profile expansion and rollback |
-| R34-R37 AI | AI operator / content owner / Security | Model terms, retrieval revocation, prompt/tool abuse evaluation, fetching controls, costs and cancel/disable |
-| R38-R39 integrated workflows | Each service operator; Product coordinates | All exposed services' gate records; portal failure and independent rollback |
-| R40 specialist extension; R41-R42 active scan | Planning/Discovery operator and Security | New capability-specific rights/scope before use; scanner authorization/kill switch/local secrets before any scan |
-| R43-R45 lifecycle/reporting | Source/data owners and reporting operator | OD-10, approved minimized projections, export/download/cache/restore isolation |
-| R46-R48 broader readiness | Platform/Security/Delivery and all service owners | Regressions, expanded exit and recovery drills; cannot retroactively approve earlier use |
+| 1 R02/R03/R06/R08-R11/R16/R17/R51-R55 | CRM adapter, portal, SSO and content owners | Account/field/grant/metric/file contracts and SYN/REAL controls before any real Home/Opportunities/Resources exposure |
+| 2 R04/R05/R07/R12-R15/R18-R26/R56/R57 | Commercial, catalog, proposal/adapter operator | Priority 1 accepted for delivery; candidate rights and full HubSpot price/BOM persistence, 30-day validity, no checkout, native edit and recovery proof |
+| 3 R34-R39/R58-R60 | AI owner, application operators, content owner | Priority 2 accepted for delivery; model terms, governed tools and cross-page context/revocation/evaluation; mandatory agent release acceptance |
+| 4 R27-R33/R40-R42 | Future Site Designer/Discovery owners | Deferred, no initialization. Explicit reactivation after priorities 1–3 and then capability-specific rights, scan/file/restore gates |
+| Later R44-R50 | Data/Platform/Delivery owners | Separate expanded reporting/exit/operations scope; no deferred item introduces initial launch controls retroactively |
+
+Home/customer composition moves from late R43 into Priority 1 R51/R52. R43 is superseded, not a second implementation task. R38/R39 now accept active portal and AI context, not five independent applications. Initial release completion requires R60. Every first-use item includes CON and SYN/REAL evidence appropriate to its scope. No numerical objective or owner acceptance is fabricated.
 
 ## First-use contract checklist (CON)
 
@@ -63,4 +57,4 @@ The original 50-item seed was 133 focused person-days, or 26.6 five-day person-w
 
 R08 must produce an owner-backed work breakdown: discovery/procurement/contracting and SSO onboarding; source/catalog stewardship and commercial policy; product/adapter implementation; security/QA and migration; per-service operations/runbooks; launch/support; explicit contingency. Separate one-time engineering, ongoing operations and elapsed vendor/legal lead times. Assign staffing/skills, concurrent constraints, blocked inputs and low/base/high volumes. Vendor proof and integration gaps become small follow-on tasks before work is funded. No current calendar commitment survives this revision; 2–3-week P0 and 18–25-week program ranges are superseded as delivery commitments.
 
-R26 accepts a funded pilot slice and its operators; R48 reconciles actual supported scope and cost. A thin slice cannot be sold as complete strategy coverage. [Source coverage](source-evidence.md) names excluded capabilities and the decision to revisit them.
+R54 accepts the HubSpot integration increment, R26 the Marketplace proposal increment, and R60 the initial release including mandatory AI; R48 reconciles actual supported scope and cost. A thin slice cannot be sold as complete strategy coverage. [Source coverage](source-evidence.md) names excluded capabilities and the decision to revisit them.

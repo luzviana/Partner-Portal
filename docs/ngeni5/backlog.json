@@ -4,22 +4,25 @@
   "items": [
     {
       "id": "R01",
-      "phase": "P0",
-      "title": "[Partner-Portal] Agree pilot scope and service autonomy",
+      "phase": "Priority 1",
+      "title": "[Partner-Portal] Agree revised portal scope and priorities",
       "owner": "Product",
       "days": 2,
       "deps": [],
-      "acceptance": "Record proposed pilot partners/users, customer/solution/environment/workspace mapping, country/currency/catalog and synthetic versus real-data scope; none is assumed accepted. Define three-axis access fixtures and native/portal outcomes. Identify Product, Security, solution and operating owners; OD-01/07 acceptance is required before affected use.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "acceptance": "Record Home/Opportunities/Marketplace/Resources navigation and always-available AI Sales Support. Customers sit in Home; prices/proposals in Opportunities; battle cards in Resources. Confirm HubSpot first, proposal-only Marketplace second, mandatory agent third. Site Designer includes multisite; Discovery covers observable network items. Both Priority 4, not initialized. Name scope/data/service owners and current pilot data/classification.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure"
+      ],
+      "delivery_priority": 1,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R02",
-      "phase": "P0",
+      "phase": "Priority 1",
       "title": "[Partner-Portal] Inventory HubSpot integration capabilities",
       "owner": "CRM admin",
       "days": 2,
@@ -27,69 +30,83 @@
         "R01"
       ],
       "acceptance": "Record actual account count, subscription, app model, API version, scopes and relevant objects. Identify an approved test environment and gaps without changing production data.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure"
+      ],
+      "delivery_priority": 1,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R03",
-      "phase": "P0",
-      "title": "[Partner-Portal] Agree CRM field owners and tenant mapping",
+      "phase": "Priority 1",
+      "title": "[Partner-Portal] Map HubSpot fields, grants and source ownership",
       "owner": "CRM admin",
       "days": 2,
       "deps": [
         "R02"
       ],
-      "acceptance": "Document one writer per CRM field and account-scoped mappings, application-owned CRM visibility grants, explicit partner/customer/solution collaboration and conflict/deletion/outage policy. Complete record-class lifecycle owners/regions and numeric revocation/cache/export/backup/audit bounds; unknowns block real-data use. Define CRM correlation, retry/uncertainty/operator bounds before R16/R18.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "acceptance": "Map partner, customer, opportunity, leads, sales, promotions, product/price and resources to actual account objects/properties/associations with one field writer. Define partner/customer/action grants, aggregate visibility, metrics/currency/time filters, retention/revocation and CRM uncertainty limits. No invented Promotions/Leads object or assumed custom-object entitlement. Unknown business definitions remain owner gates.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure"
+      ],
+      "delivery_priority": 1,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R04",
-      "phase": "P0",
-      "title": "[Partner-Portal] Compare product pricing and quote authorities",
+      "phase": "Priority 2",
+      "title": "[Partner-Portal] Select simplified Marketplace and proposal route",
       "owner": "Commercial",
       "days": 3,
       "deps": [
-        "R02"
+        "R54"
       ],
-      "acceptance": "Compare Medusa/CloudBlue/thin custom for catalog and HubSpot/QuoteWerks/conditional ERPNext/custom for quotes using solution-analysis.md evidence register and ten owner-supplied expected cases. Record field/quote authority candidates, native edit-bypass feasibility, rights gaps and low/base/high TCO inputs. This is a comparison, not selection: unknown hard gates block OD-02/03 and R08 selection.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "acceptance": "Compare thin custom UI plus HubSpot native quotes against supported HubSpot proposal/BOM representation; consider Medusa only for measured catalog gaps. Verify catalog/price source, actual account rights, protected prices, structured BOM/version history, no payments and 30-day proposal fit. Broader commerce/CPQ parked unless a specific gap justifies escalation. Record recommendation/evidence, no selection from unknown hard gates.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Priority 1 integration acceptance R54 before delivery; source/rights/30-day HubSpot proposal fit gates before use"
+      ],
+      "delivery_priority": 2,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R05",
-      "phase": "P0",
-      "title": "[Partner-Portal] Publish the solution package contract",
+      "phase": "Priority 2",
+      "title": "[Partner-Portal] Define Marketplace to HubSpot proposal and BOM contract",
       "owner": "Technical lead",
       "days": 2,
       "deps": [
-        "R01",
         "R03",
-        "R04"
+        "R04",
+        "R56"
       ],
-      "acceptance": "Review versioned package envelope with partner/customer/solution/environment/service-workspace identity, trusted scope binding, configuration digest/rule version, provenance and lifecycle references. Define schemas, limits, errors, supported versions, idempotency/replay and first-consumer compatibility checklist. Compare module/adapter/service and durable package custodian for OD-09. Unknown policy values or provider ownership block affected implementation; follow-on schema work is sized separately.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "acceptance": "Specify canonical products, quantities/units, technical digest, exact price/currency/term/tax, version, approval, issued/expiry dates and artifact. Define scoped HubSpot associations, complete structured BOM persistence/readback and retry/reconciliation. Compare provider module/adapter before a separate exchange runtime. Require current Marketplace consumer compatibility; deferred Site Designer/Discovery are not prerequisites.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Priority 1 integration acceptance R54 before delivery; source/rights/30-day HubSpot proposal fit gates before use"
+      ],
+      "delivery_priority": 2,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R06",
-      "phase": "P0",
+      "phase": "Priority 1",
       "title": "[Partner-Portal] Approve identity and service access contracts",
       "owner": "Security",
       "days": 2,
@@ -98,92 +115,106 @@
         "R03"
       ],
       "acceptance": "Obtain SSO/application owner acceptance of direct login and local grants, application audience/issuer/subject/organization/time checks, vendor federation and revocation/logout bounds. Define authenticated-without-membership, wrong-audience, revoked-grant and three-axis customer/solution tests, including support/restore. Complete owner-accepted ICR before registration; portal tokens confer no blanket vendor authority.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure"
+      ],
+      "delivery_priority": 1,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R07",
-      "phase": "P0",
-      "title": "[Partner-Portal] Assess five service solution candidates",
+      "phase": "Priority 2",
+      "title": "[Partner-Portal] Prove current Marketplace candidate fit",
       "owner": "Solutions lead",
       "days": 3,
       "deps": [
+        "R04",
         "R05",
         "R06"
       ],
-      "acceptance": "For each candidate record documented/demonstrated/contractually confirmed/unknown/failed evidence for rights, standalone SSO, isolation/restore/support, API/export fidelity, lifecycle/region and operator. Include EA compared alternatives and manual fallback lost fields/labor/outcome. Unknown or failed hard gates prohibit selection/use; scope any exclusion for explicit Product approval. Produce small proof tasks for outstanding evidence; no false completion of a vendor proof in this timebox.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "acceptance": "Apply rights/SSO/isolation/export/operator gates only to current selected Marketplace/proposal capability and common 30-day persistence cases. Record all unknowns and blocked routes. Do not initialize planning/discovery trials or require their selection to complete priorities 1\u20133. Split uncovered evidence into focused follow-on tasks.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Priority 1 integration acceptance R54 before delivery; source/rights/30-day HubSpot proposal fit gates before use"
+      ],
+      "delivery_priority": 2,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R08",
-      "phase": "P0",
-      "title": "[Partner-Portal] Approve governed data and delivery baseline",
+      "phase": "Priority 1",
+      "title": "[Partner-Portal] Accept HubSpot-first integration design baseline",
       "owner": "Delivery lead",
       "days": 2,
       "deps": [
         "R03",
-        "R04",
-        "R05",
         "R06",
-        "R07"
+        "R51",
+        "R53"
       ],
-      "acceptance": "Record selected or explicitly excluded capabilities only after R04/R07 hard-gate evidence and owner acceptance. Unknowns block affected work, not silently waive it. Obtain entitled offers and expected commercial cases; record OD-01 through OD-09 as applicable, scoped threat model and first-exposure plan/operators. Reconcile seed versus program work breakdown, stewardship, staffing, vendor lead times, operations and TCO. EA/user/affected-owner/Security approvals remain separate from this baseline.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "acceptance": "Review account/field/grant, Home metrics and Resources contracts with named CRM/Product/SSO/Security owners. Select SYN versus REAL proof plan and operating ownership; record unresolved inputs and affected scope. Size Priority 1 work separately; do not wait for deferred planning/discovery proof. This design gate is not runtime acceptance or implementation approval.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure"
+      ],
+      "delivery_priority": 1,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R09",
-      "phase": "P1",
-      "title": "[Partner-Portal] Establish independent deployment templates",
+      "phase": "Priority 1",
+      "title": "[Partner-Portal] Establish approved portal integration deployment boundary",
       "owner": "Platform",
       "days": 3,
       "deps": [
         "R08"
       ],
-      "acceptance": "Create a reusable service template with separate identity, state credentials, health endpoint and release pipeline. Deploy two empty services and update one without redeploying the other.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "acceptance": "Only after approval, establish the minimum portal and server-side adapter deployment with scoped credentials, release/rollback, health and operating evidence. Do not scaffold five services or Priority 4 components. Record which capabilities remain modules and any separate runtime justified by isolation/ownership.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure"
+      ],
+      "delivery_priority": 1,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R10",
-      "phase": "P1",
-      "title": "[Partner-Portal] Build the portal shell and service registry",
+      "phase": "Priority 1",
+      "title": "[Partner-Portal] Build current navigation and HubSpot context shell",
       "owner": "Engineering",
       "days": 2,
       "deps": [
         "R06",
         "R09"
       ],
-      "acceptance": "Display navigation projected from service-owned grants and checked workspace context; never administer universal access. One unavailable service does not block other links; direct service login works without portal. Identity self-service gains no launcher.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "acceptance": "Provide Home, Opportunities, Marketplace and Resources navigation from application-local grants. No AI Sales Support menu, Customers, Prices/Quotes, Battle Cards or Multi-Site entries. Reserve a shared support integration point for mandatory Priority 3 without claiming the agent exists. No Site Designer/Discovery initialization.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure"
+      ],
+      "delivery_priority": 1,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R11",
-      "phase": "P1",
+      "phase": "Priority 1",
       "title": "[Partner-Portal] Prove customer and solution authorization",
       "owner": "Engineering",
       "days": 3,
@@ -192,38 +223,42 @@
         "R09"
       ],
       "acceptance": "Prove local actor/action/resource grants in two pilot services using different partners, same partner/different customers or solutions, and same customer/different grants. Deny forged scope/CRM mapping, wrong audience and authenticated users without membership. Exercise revoked cached grants, direct URLs/files/jobs and unauthorized support. Record approved revocation bounds and restore-case evidence for first exposure.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure"
+      ],
+      "delivery_priority": 1,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R12",
-      "phase": "P1",
+      "phase": "Priority 2",
       "title": "[Partner-Portal] Publish a canonical catalog API slice",
       "owner": "Engineering",
       "days": 3,
       "deps": [
         "R04",
-        "R08",
+        "R07",
         "R11"
       ],
       "acceptance": "Publish 20 versioned offers with product/vendor IDs, eligibility and price references. Both list and ID lookup enforce grants. Revoke an offer and invalidate a sample consumer.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
-        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Priority 1 integration acceptance R54 before delivery; source/rights/30-day HubSpot proposal fit gates before use"
+      ],
+      "delivery_priority": 2,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R13",
-      "phase": "P1",
+      "phase": "Priority 2",
       "title": "[Partner-Portal] Implement authoritative price evaluation",
       "owner": "Engineering",
       "days": 3,
@@ -232,83 +267,89 @@
         "R12"
       ],
       "acceptance": "Pass the 10 approved NRC/MRC cases with decimal arithmetic, term, currency, version and expiry. If a vendor is master, use its supported result through the facade rather than a second calculator.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
-        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Priority 1 integration acceptance R54 before delivery; source/rights/30-day HubSpot proposal fit gates before use"
+      ],
+      "delivery_priority": 2,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R14",
-      "phase": "P1",
-      "title": "[Partner-Portal] Launch a standalone marketplace slice",
+      "phase": "Priority 2",
+      "title": "[Partner-Portal] Deliver proposal-only product selection",
       "owner": "Engineering",
       "days": 3,
       "deps": [
         "R12",
         "R13"
       ],
-      "acceptance": "A user opens Marketplace without the portal, browses entitled offers and exports a selection. The portal launches the same service with authorized context. Persist source revision.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "acceptance": "List only products we sell with authorized prices and quantities. Selection transfers canonical BOM to Opportunities proposal workflow. No cart checkout, payment, fulfilment, direct-sale order or auto-deal-won. Maintain source/product version and handle unavailable price authority explicitly.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
-        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Priority 1 integration acceptance R54 before delivery; source/rights/30-day HubSpot proposal fit gates before use"
+      ],
+      "delivery_priority": 2,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R15",
-      "phase": "P1",
-      "title": "[Partner-Portal] Accept immutable solution packages",
+      "phase": "Priority 2",
+      "title": "[Partner-Portal] Persist scoped proposal input revisions",
       "owner": "Engineering",
       "days": 3,
       "deps": [
         "R05",
-        "R08",
+        "R07",
         "R09",
         "R11"
       ],
-      "acceptance": "After OD-09 selection, the named package provider records immutable accepted package/digest and receipt through the selected module/adapter/service contract. Reject scope/schema/mapping errors and deduplicate scoped command IDs. Prove first-consumer versions/limits, authorized evidence links, tombstone/redaction/hold policy, bounded exports, revocation during replay and isolated restore; no indefinite personal-data retention.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "acceptance": "Selected proposal provider/module records exact input BOM revision/digest and deduplicated receipt. Prove contracts, authorization, lifecycle and recovery for Marketplace input. No separate exchange runtime or deferred-tool adapters without evidence/approval.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
-        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Priority 1 integration acceptance R54 before delivery; source/rights/30-day HubSpot proposal fit gates before use"
+      ],
+      "delivery_priority": 2,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R16",
-      "phase": "P1",
+      "phase": "Priority 1",
       "title": "[Partner-Portal] Create the HubSpot connector read projection",
       "owner": "Engineering",
       "days": 3,
       "deps": [
         "R02",
         "R03",
-        "R08",
         "R09",
         "R11"
       ],
       "acceptance": "Using the approved test environment, import a company/contact/deal association with account-scoped IDs. Service consumers see only granted CRM records and a freshness timestamp.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
-        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure"
+      ],
+      "delivery_priority": 1,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R17",
-      "phase": "P1",
+      "phase": "Priority 1",
       "title": "[Partner-Portal] Recover HubSpot inbound changes",
       "owner": "Engineering",
       "days": 3,
@@ -316,98 +357,110 @@
         "R16"
       ],
       "acceptance": "Verify notification authenticity, deduplicate and reread source state; test missed/reordered events, grant/token revocation, rate limits and deletion. Projection freshness is visible and stale authorization fails closed; deletion does not trigger recreate. Follow quote-and-crm-controls.md state and lifecycle rules.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
-        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure"
+      ],
+      "delivery_priority": 1,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R18",
-      "phase": "P1",
-      "title": "[Partner-Portal] Publish quote summaries to HubSpot safely",
+      "phase": "Priority 2",
+      "title": "[Partner-Portal] Persist full proposals, prices and BOMs in HubSpot",
       "owner": "Engineering",
       "days": 3,
       "deps": [
         "R03",
-        "R16"
+        "R16",
+        "R20"
       ],
-      "acceptance": "Implement durable account/object/entity-revision command ledger and mapping through Prepared/InFlight/Uncertain/Verifying/NeedsOperator/terminal states. Timeout after success with delayed visibility never causes blind duplicate create. Prove bounded retries, uncertainty deadline/escalation, safe operator decision, unique readback and field ownership; absent search is not proof of no commit.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "acceptance": "Use durable command ledger and account/opportunity-scoped associations to persist full versioned price and structured BOM, proposal artifact and validity in HubSpot. Verify all required state by readback, not only a link/summary. Timeout after success or partial association enters Uncertain/NeedsOperator, never blind duplicate create. No customer send, payment or deal-won automation.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
-        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Priority 1 integration acceptance R54 before delivery; source/rights/30-day HubSpot proposal fit gates before use"
+      ],
+      "delivery_priority": 2,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R19",
-      "phase": "P1",
+      "phase": "Priority 2",
       "title": "[Partner-Portal] Validate one technical quote fixture set",
       "owner": "Engineering",
       "days": 2,
       "deps": [
         "R04",
         "R07",
-        "R08",
         "R15"
       ],
       "acceptance": "Specify canonical technical configuration digest and rule-set version. Test ports, 500 W versus 370 W, required license and valid 20-AP fixtures; classify price-only versus technical changes with Commercial/technical owners. Unsupported rule families are blocked or expressly excluded per source coverage. Persist exact digest, findings and validity; executed evidence is a future gate.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Priority 1 integration acceptance R54 before delivery; source/rights/30-day HubSpot proposal fit gates before use"
+      ],
+      "delivery_priority": 2,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R20",
-      "phase": "P1",
-      "title": "[Partner-Portal] Create the immutable quote snapshot",
+      "phase": "Priority 2",
+      "title": "[Partner-Portal] Create immutable 30-day proposal evidence",
       "owner": "Engineering",
       "days": 3,
       "deps": [
-        "R08",
         "R13",
         "R15",
-        "R19"
+        "R19",
+        "R56"
       ],
-      "acceptance": "Bind quote revision to package/configuration digest, technical rule version, exact catalog and price evidence, currency/NRC/MRC/term and expiry. One scoped command produces one snapshot. Preserve lawful history under selected retention/redaction/hold policy. Native technical edits create a new draft and invalidate matching proof; no platform selected without supported enforcement.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "acceptance": "Bind BOM/configuration digest, rule version and exact commercial evidence to a proposal revision. Prepare 30-day validity under R56 policy, preserve history and govern personal-data retention. Supplier validity shorter than 30 days requires accepted honoring policy before issuance. Native technical changes invalidate proof; do not silently mutate an issued revision.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Priority 1 integration acceptance R54 before delivery; source/rights/30-day HubSpot proposal fit gates before use"
+      ],
+      "delivery_priority": 2,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R21",
-      "phase": "P1",
-      "title": "[Partner-Portal] Apply quote approval and revision rules",
+      "phase": "Priority 2",
+      "title": "[Partner-Portal] Apply proposal approval and renewal controls",
       "owner": "Engineering",
       "days": 2,
       "deps": [
         "R20"
       ],
-      "acceptance": "Enforce Draft/TechnicallyValid/Priced/Approved/Issued transition authorities in quote-and-crm-controls.md. Native 20-AP edit removing switch/license must prevent native and integrated approval/issue until new digest validates. Price-only edits require reprice/reapproval; unknown changes revalidate technically. Expiry during approval blocks issue. Buyer acceptance/deal-won/order are separate; selected CRM-link policy enforced.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "acceptance": "Enforce exact revision technical/commercial approval and native-edit bypass prevention. Check grant/evidence validity before issue. Require verified HubSpot persistence; customer validity is 30 days under R56. Expired proposal cannot act as current offer; renewal creates a new priced/approved revision. Buyer acceptance/order/payment are outside automatic workflow.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Priority 1 integration acceptance R54 before delivery; source/rights/30-day HubSpot proposal fit gates before use"
+      ],
+      "delivery_priority": 2,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R22",
-      "phase": "P1",
+      "phase": "Priority 2",
       "title": "[Partner-Portal] Deliver durable service events",
       "owner": "Engineering",
       "days": 3,
@@ -417,18 +470,20 @@
         "R20"
       ],
       "acceptance": "Durable outbox and deduplicating consumers survive restart. Before first consumer, publish provider-owned event schemas, supported versions, ordering/idempotency/retry limits, solution-bound replay and dead-letter lifecycle; demonstrate compatibility/rollback and operator handling. Audit uses redacted operational envelope, not unrestricted domain payload.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
-        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Priority 1 integration acceptance R54 before delivery; source/rights/30-day HubSpot proposal fit gates before use"
+      ],
+      "delivery_priority": 2,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R23",
-      "phase": "P1",
+      "phase": "Priority 2",
       "title": "[Partner-Portal] Render and quarantine proposal artifacts",
       "owner": "Engineering",
       "days": 3,
@@ -437,38 +492,45 @@
         "R22"
       ],
       "acceptance": "Render only exact approved configuration/commercial digests, hide internal cost and validate totals. Quarantine/bound input, files, worker resources and egress before use. Recheck expiry/grants/technical evidence at issue, including native CPQ edits while rendering; revoke downloads within policy bounds and expire exports. Repeated jobs cannot issue conflicting revisions.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Priority 1 integration acceptance R54 before delivery; source/rights/30-day HubSpot proposal fit gates before use"
+      ],
+      "delivery_priority": 2,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R24",
-      "phase": "P1",
-      "title": "[Partner-Portal] Reconcile an integrated pilot quote",
+      "phase": "Priority 2",
+      "title": "[Partner-Portal] Reconcile Marketplace proposal to Opportunities",
       "owner": "Quality",
       "days": 2,
       "deps": [
         "R14",
         "R17",
         "R18",
-        "R23"
+        "R23",
+        "R57"
       ],
-      "acceptance": "Demonstrate Marketplace/package/quote/proposal/CRM journey. Include native switching/license removal, price-only change, expiry during approval/render and timeout-after-success with delayed CRM visibility. No invalid quote issue or duplicate create; Pending CRM sync stays visible without altered totals. Apply selected outage policy and retain exact evidence versions.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "acceptance": "Trace authorized products/quantities through reviewed proposal, complete HubSpot price/BOM persistence and Opportunities view. Test native technical edits, revoked grant, delayed CRM visibility and partial write. Pending does not mean issued/saved. Include R57 expiry and no-payment evidence.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Priority 1 integration acceptance R54 before delivery; source/rights/30-day HubSpot proposal fit gates before use"
+      ],
+      "delivery_priority": 2,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R25",
-      "phase": "P1",
+      "phase": "Priority 2",
       "title": "[Partner-Portal] Test standalone and cross-tenant failures",
       "owner": "Quality",
       "days": 3,
@@ -476,337 +538,367 @@
         "R24"
       ],
       "acceptance": "Portal outage preserves native access; shared-data/vendor outage reports accurate degradation. Exercise all three authority axes across API/files/jobs/AI/export surfaces in pilot scope, with forged context, revoked grants and unauthorized support. Include deletion/replay/restore denial cases, not just different partner IDs.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Priority 1 integration acceptance R54 before delivery; source/rights/30-day HubSpot proposal fit gates before use"
+      ],
+      "delivery_priority": 2,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R26",
-      "phase": "P1",
-      "title": "[Partner-Portal] Restore and accept the pilot",
+      "phase": "Priority 2",
+      "title": "[Partner-Portal] Accept Marketplace proposal increment",
       "owner": "Platform",
       "days": 3,
       "deps": [
-        "R25"
+        "R25",
+        "R54"
       ],
-      "acceptance": "Accept only scoped pilot with each earlier first-exposure SYN/REAL checklist already satisfied, named accountable operators and applicable approvals. Prove isolated restore, revocation/tombstone replay, support denial, credential rotation and audit redaction; reconcile HubSpot and journey reliability. Product records acceptance or blocked capabilities; unknown controls/data policies cannot pass on functional success.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "acceptance": "Require R54 HubSpot integration acceptance, complete price/BOM persistence, 30-day controls, no checkout/payment, exact approvals and first-use security/restore/operator evidence. This accepts Priority 2 only; initial priorities 1\u20133 release remains incomplete until mandatory AI R60.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Priority 1 integration acceptance R54 before delivery; source/rights/30-day HubSpot proposal fit gates before use"
+      ],
+      "delivery_priority": 2,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R27",
-      "phase": "P2",
-      "title": "[Partner-Portal] Prove independent floor plan access",
+      "phase": "Priority 4",
+      "title": "[Partner-Portal] Deferred: define Site Designer scope",
       "owner": "Engineering",
       "days": 2,
       "deps": [
-        "R07",
-        "R08",
-        "R09",
-        "R11",
-        "R26"
+        "R60"
       ],
-      "acceptance": "Before any selected planner configuration/upload, R07/R08 must hold passing rights/SSO/isolation/region/export evidence for this capability, plus SYN/REAL checklist. Demonstrate independent access and calibrated approved file, upload/egress containment and separate state/recovery. Unknown Hamina/incumbent rights block use; a synthetic custom geometry slice does not claim RF or non-Wi-Fi simulation.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
-      "priority": "High",
+      "acceptance": "When explicitly reactivated, define one Site Designer incorporating floor/site geometry and multisite profiles/overrides. Evaluate specialist/custom options and first-use controls then; no initialization now.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
+      "priority": "Deferred",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Explicit Priority 4 reactivation required; do not initialize services, UI routes, collectors, accounts, trials or infrastructure now"
+      ],
+      "delivery_priority": 4,
+      "status": "deferred_not_initialized"
     },
     {
       "id": "R28",
-      "phase": "P2",
-      "title": "[Partner-Portal] Map floor plan output to a package",
+      "phase": "Priority 4",
+      "title": "[Partner-Portal] Deferred: map Site Designer BOM output",
       "owner": "Engineering",
       "days": 3,
       "deps": [
-        "R15",
-        "R27"
+        "R27",
+        "R15"
       ],
-      "acceptance": "Map canonical devices, source revision and geometry references through a supported contract and consumer compatibility proof. Enumerate lost export fields (including unavailable power/port/geometry facts), manual enrichment and labor. Missing evidence blocks applicable technical validation; successful import is not RF accuracy or full round-trip proof.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
-      "priority": "High",
+      "acceptance": "After reactivation and provider selection, map Site Designer products/sites/profiles/geometry and fidelity into existing Opportunities proposal contract. Future accuracy/rights evidence required; no new adapter now.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
+      "priority": "Deferred",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
-        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Explicit Priority 4 reactivation required; do not initialize services, UI routes, collectors, accounts, trials or infrastructure now"
+      ],
+      "delivery_priority": 4,
+      "status": "deferred_not_initialized"
     },
     {
       "id": "R29",
-      "phase": "P2",
-      "title": "[Partner-Portal] Launch standalone discovery import",
+      "phase": "Priority 4",
+      "title": "[Partner-Portal] Deferred: define network-wide Discovery coverage",
       "owner": "Engineering",
       "days": 3,
       "deps": [
-        "R07",
-        "R08",
-        "R09",
-        "R11",
-        "R26"
+        "R60"
       ],
-      "acceptance": "Launch only approved file-import assessment with first-use checklist and isolated observation store. Persist source/time/device and deduplicate batches; validate malicious/oversized files. Observations are not authoritative inventory or iTop replacement. NetBox requires OD-10; no active scan is authorized by this item.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
-      "priority": "High",
+      "acceptance": "When reactivated, scope authorized segments, device classes, protocols/credentials and safety limits to find all observable network items including endpoints, servers, printers, IoT and network equipment. Measure known/unknown/unreachable coverage; import alone is insufficient. No active scan or initialization now.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
+      "priority": "Deferred",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Explicit Priority 4 reactivation required; do not initialize services, UI routes, collectors, accounts, trials or infrastructure now"
+      ],
+      "delivery_priority": 4,
+      "status": "deferred_not_initialized"
     },
     {
       "id": "R30",
-      "phase": "P2",
-      "title": "[Partner-Portal] Publish reviewed discovery dispositions",
+      "phase": "Priority 4",
+      "title": "[Partner-Portal] Deferred: review discovery observations",
       "owner": "Engineering",
       "days": 2,
       "deps": [
-        "R15",
         "R29"
       ],
-      "acceptance": "Review KEEP/REUSE/UPGRADE/REPLACE/ADD and export versioned provenance. Only confirmed technically acceptable reuse reduces new quantities; unknown devices remain unresolved. Define observation expiry and source-owned references; no new detailed CMDB authority.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
-      "priority": "High",
+      "acceptance": "After authorized discovery, review provenance and KEEP/REUSE/UPGRADE/REPLACE/ADD. Unknown/unreachable items remain explicit. Observations do not replace iTop inventory authority; import can supplement, not fulfill network discovery.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
+      "priority": "Deferred",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Explicit Priority 4 reactivation required; do not initialize services, UI routes, collectors, accounts, trials or infrastructure now"
+      ],
+      "delivery_priority": 4,
+      "status": "deferred_not_initialized"
     },
     {
       "id": "R31",
-      "phase": "P2",
-      "title": "[Partner-Portal] Launch the independent multisite workspace",
+      "phase": "Priority 4",
+      "title": "[Partner-Portal] Deferred: add multisite context inside Site Designer",
       "owner": "Engineering",
       "days": 3,
       "deps": [
-        "R08",
-        "R09",
-        "R11",
-        "R26"
+        "R27"
       ],
-      "acceptance": "Apply service-specific first-use/isolation/restore gates before staging a 60-site file in a standalone workspace bound to one solution/environment. Show row errors and confirmation; prove same-partner/different-customer separation. Optional CRM references do not grant access or cause immediate create.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
-      "priority": "High",
+      "acceptance": "After explicit reactivation, add sites/profile workspace inside Site Designer, not a separate menu/product. Bind each workspace to solution/environment and validate staged site inputs.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
+      "priority": "Deferred",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Explicit Priority 4 reactivation required; do not initialize services, UI routes, collectors, accounts, trials or infrastructure now"
+      ],
+      "delivery_priority": 4,
+      "status": "deferred_not_initialized"
     },
     {
       "id": "R32",
-      "phase": "P2",
-      "title": "[Partner-Portal] Version profiles and site overrides",
+      "phase": "Priority 4",
+      "title": "[Partner-Portal] Deferred: version Site Designer profiles and overrides",
       "owner": "Engineering",
       "days": 3,
       "deps": [
         "R31"
       ],
       "acceptance": "Apply a profile revision to 40 sites and one local override. Preview later changes and preserve source revisions. A repeated application creates no duplicate quantities.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
-      "priority": "High",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
+      "priority": "Deferred",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Explicit Priority 4 reactivation required; do not initialize services, UI routes, collectors, accounts, trials or infrastructure now"
+      ],
+      "delivery_priority": 4,
+      "status": "deferred_not_initialized"
     },
     {
       "id": "R33",
-      "phase": "P2",
-      "title": "[Partner-Portal] Export the multisite solution package",
+      "phase": "Priority 4",
+      "title": "[Partner-Portal] Deferred: export Site Designer multisite BOM",
       "owner": "Engineering",
       "days": 2,
       "deps": [
-        "R15",
+        "R28",
         "R32"
       ],
-      "acceptance": "Expanded BOM equals per-site totals. Source sites/profile revisions and overrides remain traceable. Existing issued quotes do not change after a new site revision.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
-      "priority": "High",
+      "acceptance": "After reactivation, reproducible site/profile expansion exports one versioned BOM into Opportunities, preserving historical quotes. No independent Multi-Site service initialization.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
+      "priority": "Deferred",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
-        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Explicit Priority 4 reactivation required; do not initialize services, UI routes, collectors, accounts, trials or infrastructure now"
+      ],
+      "delivery_priority": 4,
+      "status": "deferred_not_initialized"
     },
     {
       "id": "R34",
-      "phase": "P2",
-      "title": "[Partner-Portal] Publish entitled AI knowledge",
+      "phase": "Priority 3",
+      "title": "[Partner-Portal] Prepare authorized AI Sales Support knowledge",
       "owner": "Catalog steward",
       "days": 2,
       "deps": [
-        "R03",
         "R12",
-        "R26"
+        "R26",
+        "R55"
       ],
-      "acceptance": "Publish governed specifications/battle cards with owner, rights, class, version, region and expiry. Source/grant revocation invalidates retrieval, chunks, caches and queued jobs within approved bounds; stale authority fails closed. AI content publication is not the deferred human comparison/resources experience.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "acceptance": "Use governed product evidence and HubSpot Resources/battle cards with citations, rights/version/expiry and scoped CRM context. Human Resources remains a first-class Priority 1 feature. Revoke cached chunks/tool context within approved bounds; stale protected authority fails closed.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
-        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Priority 2 acceptance R26 before delivery; agent is mandatory for initial release, with no menu item"
+      ],
+      "delivery_priority": 3,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R35",
-      "phase": "P2",
-      "title": "[Partner-Portal] Launch independent AI retrieval",
+      "phase": "Priority 3",
+      "title": "[Partner-Portal] Build AI Sales Support agent capability",
       "owner": "Engineering",
       "days": 3,
       "deps": [
-        "R07",
-        "R08",
         "R09",
         "R11",
-        "R34"
+        "R34",
+        "R58"
       ],
-      "acceptance": "First-use AI checklist verifies provider/model rights/region/retention, protected endpoint and URL/egress controls, scoped conversations/indexes, direct login/local grants, cancellation and budgets. Prove all three authority axes, revocation during retrieval and source deletion/restore behavior before real-data exposure.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "acceptance": "Implement approved agent orchestration with scoped CRM/catalog/Resources read tools, grounded answers and separate context per authorized customer/opportunity. Provider/model terms and first-use controls precede exposure. No standalone AI menu/application or broad HubSpot API credential. Support cancellation, budgets and safe unavailable state.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
-        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Priority 2 acceptance R26 before delivery; agent is mandatory for initial release, with no menu item"
+      ],
+      "delivery_priority": 3,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R36",
-      "phase": "P2",
-      "title": "[Partner-Portal] Submit reviewed AI solution proposals",
+      "phase": "Priority 3",
+      "title": "[Partner-Portal] Propose human-reviewed sales drafts",
       "owner": "Engineering",
       "days": 3,
       "deps": [
         "R15",
         "R35"
       ],
-      "acceptance": "Typed tool produces a proposed package/diff for user review. Receiving service reauthorizes and validates. AI has no table-write, approval, proposal-send or order capability.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "acceptance": "Agent can suggest products, BOM changes and proposal drafts through typed reauthorized contracts. Show source evidence and exact proposed changes for human review. No autonomous pricing approval, customer send, order, deployment, scanning or direct database write. Any later CRM write requires separately approved preview/confirmation and ledger.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Priority 2 acceptance R26 before delivery; agent is mandatory for initial release, with no menu item"
+      ],
+      "delivery_priority": 3,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R37",
-      "phase": "P2",
-      "title": "[Partner-Portal] Evaluate AI quality and failure isolation",
+      "phase": "Priority 3",
+      "title": "[Partner-Portal] Evaluate AI Sales Support behavior",
       "owner": "Quality",
       "days": 3,
       "deps": [
         "R36"
       ],
-      "acceptance": "Run 50 grounded cases plus malicious retrieval and cross-tenant attempts. Report quality and cost. Disable AI and prove Marketplace/manual quoting still works.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "acceptance": "Test grounded CRM/product/resource cases, unknown-price refusal, malicious resource content, revoked grants and cross-customer navigation. Measure quality/cost/latency and confirm manual Home/Opportunities/Marketplace/Resources workflows during agent outage. No unexecuted result claimed.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Priority 2 acceptance R26 before delivery; agent is mandatory for initial release, with no menu item"
+      ],
+      "delivery_priority": 3,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R38",
-      "phase": "P2",
-      "title": "[Partner-Portal] Complete portal handoff contracts",
+      "phase": "Priority 3",
+      "title": "[Partner-Portal] Verify active portal context and handoff contracts",
       "owner": "Engineering",
       "days": 3,
       "deps": [
-        "R28",
-        "R30",
-        "R33",
-        "R37"
+        "R26",
+        "R59"
       ],
-      "acceptance": "Before each portal consumer uses a provider contract, prove version/limits/error/rollback compatibility and context/grant validation. Portal composes service visibility without authority; native access survives portal failure. Contain unavailable vendor/bad token and make handoff status truthful.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "acceptance": "Verify context/grants across Home, Opportunities, Marketplace, Resources and persistent AI Sales Support. Service-owned contracts/versions remain compatible. Site Designer/Discovery integration is excluded until reactivation.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
-        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Priority 2 acceptance R26 before delivery; agent is mandatory for initial release, with no menu item"
+      ],
+      "delivery_priority": 3,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R39",
-      "phase": "P2",
-      "title": "[Partner-Portal] Accept five independent service workflows",
+      "phase": "Priority 3",
+      "title": "[Partner-Portal] Accept active portal workflows with mandatory AI",
       "owner": "Quality",
       "days": 3,
       "deps": [
+        "R37",
         "R38"
       ],
-      "acceptance": "Demonstrate five independent thin workflows only for expressly included capabilities, each with native access/state/release ownership, first-use checklist and supported package contract. Release one without changing others; record vendor equivalents and source-coverage exclusions. This does not accept deferred RF/non-Wi-Fi/rule/lifecycle breadth.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "acceptance": "Verify priority 1\u20133 journeys and persistent agent context without separate AI navigation. Confirm full 30-day proposal evidence in HubSpot and human review. Do not require or claim five independent applications; deferred Site Designer/Discovery remain uninitialized.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
       "priority": "High",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Priority 2 acceptance R26 before delivery; agent is mandatory for initial release, with no menu item"
+      ],
+      "delivery_priority": 3,
+      "status": "proposed_pending_approval"
     },
     {
       "id": "R40",
-      "phase": "P3",
+      "phase": "Priority 4",
       "title": "[Partner-Portal] Expand specialist RF accuracy and fidelity proof",
       "owner": "Solutions lead",
       "days": 3,
       "deps": [
-        "R28",
-        "R39"
+        "R28"
       ],
       "acceptance": "Expand RF accuracy/fidelity proof only for a candidate with selection rights/SSO/isolation/export gates passed before its first use. Test approved fixture and document remaining work; this later item cannot authorize earlier R27/R28 use. Non-Wi-Fi functions need their own scope/evidence before claims.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
-      "priority": "High",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
+      "priority": "Deferred",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Explicit Priority 4 reactivation required; do not initialize services, UI routes, collectors, accounts, trials or infrastructure now"
+      ],
+      "delivery_priority": 4,
+      "status": "deferred_not_initialized"
     },
     {
       "id": "R41",
-      "phase": "P3",
+      "phase": "Priority 4",
       "title": "[Partner-Portal] Authorize a discovery collector scope",
       "owner": "Security",
       "days": 2,
       "deps": [
-        "R07",
-        "R08",
-        "R30",
-        "R39"
+        "R29"
       ],
       "acceptance": "Before any active scan, reconfirm selected scanner rights and approve exact customer/lab targets, protocols, local secrets, identity, egress/kill switch, operator and SYN/REAL checklist. R07/R08 selection evidence precedes configuration; late approval does not legalize prior scans.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
-      "priority": "High",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
+      "priority": "Deferred",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Explicit Priority 4 reactivation required; do not initialize services, UI routes, collectors, accounts, trials or infrastructure now"
+      ],
+      "delivery_priority": 4,
+      "status": "deferred_not_initialized"
     },
     {
       "id": "R42",
-      "phase": "P3",
+      "phase": "Priority 4",
       "title": "[Partner-Portal] Demonstrate one discovery collector feed",
       "owner": "Engineering",
       "days": 3,
@@ -814,61 +906,62 @@
         "R41"
       ],
       "acceptance": "Only after R41, ingest one authorized lab/vendor collector batch with source mapping, bounded retry and observation expiry; test disconnected/duplicate recovery and scoped credential handling. Record known/unknown device coverage and follow-on scope; no universal discovery claim.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
-      "priority": "High",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
+      "priority": "Deferred",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure",
+        "Explicit Priority 4 reactivation required; do not initialize services, UI routes, collectors, accounts, trials or infrastructure now"
+      ],
+      "delivery_priority": 4,
+      "status": "deferred_not_initialized"
     },
     {
       "id": "R43",
-      "phase": "P3",
-      "title": "[Partner-Portal] Compose a HubSpot customer lifecycle view",
+      "phase": "Later",
+      "title": "[Partner-Portal] Superseded: customer information now in Home",
       "owner": "Engineering",
       "days": 3,
-      "deps": [
-        "R03",
-        "R17",
-        "R18",
-        "R39"
-      ],
-      "acceptance": "After OD-10, compose authorized HubSpot context, source-owned package/quote links and one explicitly selected lifecycle feed with freshness. No second CRM or detailed inventory/ticket/topology replica; preserve iTop and use owner ICR if affected. First-use checklist and grant/source revocation apply; broader lifecycle remains excluded pending approval.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
-      "priority": "High",
+      "deps": [],
+      "acceptance": "Do not execute this former late Customer 360 item. Its current CRM/customer composition scope moves to R51/R52 in Priority 1. Additional lifecycle feeds remain separately scoped future work.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
+      "priority": "Superseded",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
-        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure"
+      ],
+      "delivery_priority": null,
+      "status": "superseded",
+      "superseded_by": [
+        "R51",
+        "R52"
       ]
     },
     {
       "id": "R44",
-      "phase": "P3",
+      "phase": "Later",
       "title": "[Partner-Portal] Build a reconciled reporting projection",
       "owner": "Engineering",
       "days": 3,
       "deps": [
-        "R03",
-        "R22",
-        "R39",
-        "R43"
+        "R60"
       ],
       "acceptance": "Create only approved minimized solution-scoped reporting projection. Reconcile version counts/values without revision double counting. Apply three-axis grants, selected retention/region, source tombstones, cache/export expiry and restore replay; no central detailed customer data lake. CON and REAL/SYN proof precede first use.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
-      "priority": "High",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
+      "priority": "Later",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
-        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure"
+      ],
+      "delivery_priority": null,
+      "status": "parked"
     },
     {
       "id": "R45",
-      "phase": "P3",
+      "phase": "Later",
       "title": "[Partner-Portal] Prove report formats and BI isolation",
       "owner": "Engineering",
       "days": 3,
@@ -876,38 +969,39 @@
         "R44"
       ],
       "acceptance": "Prove one approved report in PDF/Excel/CSV/PPT with filters/as-of and genuine format fidelity. Test all three authority axes including cached/scheduled/export/service-principal paths, download revocation and expiry; document unavoidable downloaded-copy limits. Remaining strategy reports require separate scope/funding.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
-      "priority": "High",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
+      "priority": "Later",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
-        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure"
+      ],
+      "delivery_priority": null,
+      "status": "parked"
     },
     {
       "id": "R46",
-      "phase": "P3",
+      "phase": "Later",
       "title": "[Partner-Portal] Test compatibility and vendor exit",
       "owner": "Quality",
       "days": 3,
       "deps": [
-        "R40",
-        "R42",
-        "R45"
+        "R60"
       ],
       "acceptance": "Expand prior first-use compatibility tests into vendor exit/recovery: supported previous versions, solution state/canonical references, lost fields, deletion/backup expiry, legal holds and revoked grants after export/restore. Record migration owner and gaps; this is not the first consumer contract proof.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
-      "priority": "High",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
+      "priority": "Later",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure"
+      ],
+      "delivery_priority": null,
+      "status": "parked"
     },
     {
       "id": "R47",
-      "phase": "P3",
+      "phase": "Later",
       "title": "[Partner-Portal] Exercise enterprise security and recovery",
       "owner": "Security",
       "days": 3,
@@ -915,17 +1009,19 @@
         "R46"
       ],
       "acceptance": "Regress earlier service launch controls across all approved scope: three-axis isolation, support elevation denial, credentials, bounded revocation, lifecycle purge, immutable redaction and backup/restore reconciliation. Record independent Security decisions for material exceptions; none are preapproved. Do not defer initial controls to this item.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
-      "priority": "High",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
+      "priority": "Later",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure"
+      ],
+      "delivery_priority": null,
+      "status": "parked"
     },
     {
       "id": "R48",
-      "phase": "P3",
+      "phase": "Later",
       "title": "[Partner-Portal] Accept integrated service operations",
       "owner": "Delivery lead",
       "days": 2,
@@ -933,49 +1029,272 @@
         "R47"
       ],
       "acceptance": "Reconcile actual supported scope, staffing/TCO, vendor/manual-handoff costs, named operators/on-call, journey SLIs and recovery evidence with funded baseline. Each vendor outage counts in journey measurement. Accept precise release scope or keep unresolved capabilities blocked; no assumption-based schedule or SLO claim.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
-      "priority": "High",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
+      "priority": "Later",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
-        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure"
+      ],
+      "delivery_priority": null,
+      "status": "parked"
     },
     {
       "id": "R49",
       "phase": "Later",
-      "title": "[Partner-Portal] Scope order and billing integration",
+      "title": "[Partner-Portal] Parked: order and billing business case",
       "owner": "Commercial",
       "days": 3,
       "deps": [
         "R48"
       ],
-      "acceptance": "Specify ERP/order master, idempotency, tax and subscription handoff. Produce a funded, small-item backlog before committing implementation.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
-      "priority": "Medium",
+      "acceptance": "Direct sales, checkout, payment and order/billing are outside the current Marketplace. This is not a prerequisite or scheduled delivery item. Reopen only on a separate explicit scope change.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
+      "priority": "Later",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work"
-      ]
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure"
+      ],
+      "delivery_priority": null,
+      "status": "parked"
     },
     {
       "id": "R50",
       "phase": "Later",
-      "title": "[Partner-Portal] Review internal service decomposition",
+      "title": "[Partner-Portal] Parked: reassess internal decomposition",
       "owner": "Technical lead",
       "days": 2,
       "deps": [
         "R48"
       ],
-      "acceptance": "Keep the five independent business boundaries. Use measured load and team ownership to decide whether any shared/internal component needs further separation.",
-      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
-      "priority": "Medium",
+      "acceptance": "Reassess modules/services only with measured ownership/load/isolation evidence. Earlier mandatory five-service topology is superseded. No automatic new repositories, gateway or deferred-service scaffolds.",
+      "source": "Latest reviewed user scope in priority-plan.md; original PDF and EA controls where applicable",
+      "priority": "Later",
       "estimate_status": "historical_timebox_reestimate_required",
       "gates": [
-        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work"
+        "EA review of revised scope, explicit user implementation approval and applicable affected-owner/Security acceptance; prior reports do not approve this revision",
+        "CON and SYN/REAL first-use evidence in release-and-operations.md before applicable exposure"
+      ],
+      "delivery_priority": null,
+      "status": "parked"
+    },
+    {
+      "id": "R51",
+      "phase": "Priority 1",
+      "delivery_priority": 1,
+      "status": "proposed_pending_approval",
+      "title": "[Partner-Portal] Define HubSpot Home aggregation",
+      "owner": "Product",
+      "days": null,
+      "deps": [
+        "R02",
+        "R03"
+      ],
+      "acceptance": "Document partner information, sales, leads, promotions, customers and opportunity mapping from actual HubSpot source. Define sales/count/date/currency/dedupe metrics, partner/customer grants, promotion validity and source timestamps. Unknown sources/definitions block claims; no mock data treated as actual results.",
+      "source": "Latest reviewed user scope in priority-plan.md",
+      "priority": "High",
+      "estimate_status": "not_estimated",
+      "gates": [
+        "Exact-revision EA review and explicit user implementation approval plus applicable owner/Security acceptance",
+        "CON and SYN/REAL first-use checks before applicable exposure"
+      ]
+    },
+    {
+      "id": "R52",
+      "phase": "Priority 1",
+      "delivery_priority": 1,
+      "status": "proposed_pending_approval",
+      "title": "[Partner-Portal] Prove scoped Home and Opportunities reads",
+      "owner": "Engineering",
+      "days": null,
+      "deps": [
+        "R10",
+        "R16",
+        "R51"
+      ],
+      "acceptance": "Render authorized HubSpot Home aggregate and opportunity drilldown with source/freshness and customer context. Test other partner, same partner/different customer, different grants, missing data versus outage, revoked access, duplicate revisions and currency treatment.",
+      "source": "Latest reviewed user scope in priority-plan.md",
+      "priority": "High",
+      "estimate_status": "not_estimated",
+      "gates": [
+        "Exact-revision EA review and explicit user implementation approval plus applicable owner/Security acceptance",
+        "CON and SYN/REAL first-use checks before applicable exposure"
+      ]
+    },
+    {
+      "id": "R53",
+      "phase": "Priority 1",
+      "delivery_priority": 1,
+      "status": "proposed_pending_approval",
+      "title": "[Partner-Portal] Define HubSpot Resources contract",
+      "owner": "Content owner",
+      "days": null,
+      "deps": [
+        "R02",
+        "R03"
+      ],
+      "acceptance": "Agree HubSpot file/folder taxonomy, discoverable metadata, battle-card location, owner/version/validity/audience and per-partner read/download policy. Evaluate private access, search/filter semantics and cache invalidation. Full-text search and any indexing entitlement remain explicit decisions.",
+      "source": "Latest reviewed user scope in priority-plan.md",
+      "priority": "High",
+      "estimate_status": "not_estimated",
+      "gates": [
+        "Exact-revision EA review and explicit user implementation approval plus applicable owner/Security acceptance",
+        "CON and SYN/REAL first-use checks before applicable exposure"
+      ]
+    },
+    {
+      "id": "R54",
+      "phase": "Priority 1",
+      "delivery_priority": 1,
+      "status": "proposed_pending_approval",
+      "title": "[Partner-Portal] Accept HubSpot integration increment",
+      "owner": "Product",
+      "days": null,
+      "deps": [
+        "R17",
+        "R52",
+        "R55"
+      ],
+      "acceptance": "Accept approved Home/Opportunities/Resources proof with source mappings, aggregate accuracy, grants, private downloads, revocation and outage/recovery. Named CRM/content/operator owners confirm evidence and missing inputs. This is the delivery predecessor to Marketplace, not an implementation approval.",
+      "source": "Latest reviewed user scope in priority-plan.md",
+      "priority": "High",
+      "estimate_status": "not_estimated",
+      "gates": [
+        "Exact-revision EA review and explicit user implementation approval plus applicable owner/Security acceptance",
+        "CON and SYN/REAL first-use checks before applicable exposure"
+      ]
+    },
+    {
+      "id": "R55",
+      "phase": "Priority 1",
+      "delivery_priority": 1,
+      "status": "proposed_pending_approval",
+      "title": "[Partner-Portal] Provide findable HubSpot Resources",
+      "owner": "Engineering",
+      "days": null,
+      "deps": [
+        "R10",
+        "R16",
+        "R53"
+      ],
+      "acceptance": "Implement authorized file metadata browse/search/filter and controlled open/download from HubSpot, including battle cards. Test guessed file ID, revoked grant, expired/withdrawn resource and caches; no public sharing used to bypass rights. Confirm human findability separately from AI retrieval.",
+      "source": "Latest reviewed user scope in priority-plan.md",
+      "priority": "High",
+      "estimate_status": "not_estimated",
+      "gates": [
+        "Exact-revision EA review and explicit user implementation approval plus applicable owner/Security acceptance",
+        "CON and SYN/REAL first-use checks before applicable exposure"
+      ]
+    },
+    {
+      "id": "R56",
+      "phase": "Priority 2",
+      "delivery_priority": 2,
+      "status": "proposed_pending_approval",
+      "title": "[Partner-Portal] Specify 30-day proposal clock and persistence",
+      "owner": "Commercial",
+      "days": null,
+      "deps": [
+        "R04"
+      ],
+      "acceptance": "Confirm issuance anchor, calendar/timezone/end-of-day rule and exact 30-day validity, consistent HubSpot representation, renewal/version behavior and commercial price-honoring policy. Choose native quotes or proven supported proposal/BOM representation. No automatic payment/checkout/send; unresolved policy or shorter supplier commitment blocks issue.",
+      "source": "Latest reviewed user scope in priority-plan.md",
+      "priority": "High",
+      "estimate_status": "not_estimated",
+      "gates": [
+        "Exact-revision EA review and explicit user implementation approval plus applicable owner/Security acceptance",
+        "CON and SYN/REAL first-use checks before applicable exposure"
+      ]
+    },
+    {
+      "id": "R57",
+      "phase": "Priority 2",
+      "delivery_priority": 2,
+      "status": "proposed_pending_approval",
+      "title": "[Partner-Portal] Prove proposal expiry and complete HubSpot persistence",
+      "owner": "Quality",
+      "days": null,
+      "deps": [
+        "R18",
+        "R23",
+        "R56"
+      ],
+      "acceptance": "Verify canonical BOM lines, quantities, prices/totals/currency, artifact/version and 30-day validity in HubSpot and portal. Test day 30 boundary, timezone, draft ageing, expired old revision and renewal. Assert no payment/checkout/order/deal-won behavior, native-edit bypass or duplicate create after timeout.",
+      "source": "Latest reviewed user scope in priority-plan.md",
+      "priority": "High",
+      "estimate_status": "not_estimated",
+      "gates": [
+        "Exact-revision EA review and explicit user implementation approval plus applicable owner/Security acceptance",
+        "CON and SYN/REAL first-use checks before applicable exposure"
+      ]
+    },
+    {
+      "id": "R58",
+      "phase": "Priority 3",
+      "delivery_priority": 3,
+      "status": "proposed_pending_approval",
+      "title": "[Partner-Portal] Define AI Sales Support tools and context",
+      "owner": "AI owner",
+      "days": null,
+      "deps": [
+        "R26",
+        "R53"
+      ],
+      "acceptance": "Specify mandatory all-page agent, current context visibility and permission-scoped CRM/catalog/Resources read tools. Draft-only commercial suggestions need human review. Select model/data terms and tool allowlist; prohibit broad API access and autonomous sends/approvals. Clear/reauthorize context on customer/page changes.",
+      "source": "Latest reviewed user scope in priority-plan.md",
+      "priority": "High",
+      "estimate_status": "not_estimated",
+      "gates": [
+        "Exact-revision EA review and explicit user implementation approval plus applicable owner/Security acceptance",
+        "CON and SYN/REAL first-use checks before applicable exposure"
+      ]
+    },
+    {
+      "id": "R59",
+      "phase": "Priority 3",
+      "delivery_priority": 3,
+      "status": "proposed_pending_approval",
+      "title": "[Partner-Portal] Integrate AI support across active pages",
+      "owner": "Engineering",
+      "days": null,
+      "deps": [
+        "R10",
+        "R35",
+        "R55"
+      ],
+      "acceptance": "Expose a persistent agent control on Home, Opportunities, Marketplace and Resources, without menu item. Supply minimal authorized page/opportunity context, source links and clear context switching. Test revoked access, previous-customer leakage, unsupported actions and agent outage without disabling page functions.",
+      "source": "Latest reviewed user scope in priority-plan.md",
+      "priority": "High",
+      "estimate_status": "not_estimated",
+      "gates": [
+        "Exact-revision EA review and explicit user implementation approval plus applicable owner/Security acceptance",
+        "CON and SYN/REAL first-use checks before applicable exposure"
+      ]
+    },
+    {
+      "id": "R60",
+      "phase": "Priority 3",
+      "delivery_priority": 3,
+      "status": "proposed_pending_approval",
+      "title": "[Partner-Portal] Accept mandatory agent and initial release",
+      "owner": "Product",
+      "days": null,
+      "deps": [
+        "R37",
+        "R39",
+        "R59"
+      ],
+      "acceptance": "Accept priorities 1\u20133 only when the agent works on every active page with grounded authorized assistance, human-reviewed draft actions, source revocation and outage fallback. Record named operator/model/retention/cost evidence; agent cannot be silently deferred. Site Designer and Discovery remain deferred and uninitialized.",
+      "source": "Latest reviewed user scope in priority-plan.md",
+      "priority": "High",
+      "estimate_status": "not_estimated",
+      "gates": [
+        "Exact-revision EA review and explicit user implementation approval plus applicable owner/Security acceptance",
+        "CON and SYN/REAL first-use checks before applicable exposure"
       ]
     }
   ],
-  "revision": "author-revision-1_against_PP-EA-2026-10-06-v2",
-  "estimate_note": "133 historical seed person-days; revised acceptance not re-estimated; not a program or calendar commitment"
+  "revision": "author-revision-2_hubspot-first_user-scope",
+  "estimate_note": "R01-R50 retain historical 133-day timeboxes only; all revised scope needs re-estimation. R51-R60 have no estimate; no current total or schedule."
 }

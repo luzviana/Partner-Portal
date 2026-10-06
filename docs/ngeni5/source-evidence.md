@@ -10,26 +10,24 @@
 
 The full PDF is available to the EA reviewer on the same authorized host. The exact local path was sent through the EA terminal handoff. It is not included in this public repository, and mockup customer/product/pricing details are not reproduced as production facts. A reviewer without source access must report that blocker, not claim PDF alignment.
 
-## Current coverage and bounded proposed deferrals
+## Latest scope precedence and traceability
 
-No capability is implemented. Planned means backlog/design scope, not delivery evidence. Deferrals below are author proposals awaiting Product/Cleber acceptance; none is an accepted exception. Until accepted or funded, the omitted capability is excluded from pilot claims and cannot be sold as full strategy delivery. Exit is a specific scope/rule/feed/content decision and small funded backlog before enabling the capability; no invented calendar approval date.
+The latest reviewed user list supersedes the earlier interpretation where AI and Multi-Site were separate independent entry points. The original 24-page PDF and hash are unchanged; this is a user-directed scope revision, not a replacement source. No feature is implemented.
 
-| Physical pages | Intent | Planned slice / item IDs | Explicit limit, owner and revisit gate |
-| --- | --- | --- | --- |
-| 1–3 | Independent connected tools | Five business services, direct access and portal projection; R01/R06/R10/R39 | Shared dependencies explicit; runtime/selection decisions OD-01/06/08 remain pending |
-| 4–5 | Opportunity/site intake | Account-scoped HubSpot references and isolated staged site import; R02/R03/R16-R18/R31 | Actual write/grant policy OD-04 before connector use; no automatic record creation |
-| 6–7 | Floor-plan design and device placement | Calibrated geometry/BOM export R27/R28; separately gated RF extension R40 | Camera field of view, IoT placement, edge sizing and full RF accuracy are not proven. Solutions/Product must define representative fixtures, domain criteria and funded tasks before advertising/enabling each non-Wi-Fi family |
-| 8–9 | Discovery and reviewed dispositions | Observation imports R29/R30; separately authorized active collection R41/R42 | Import does not equal scanning; universal device/protocol coverage deferred pending measured inventory and Product/Security scope |
-| 10–11 | AI contextual solution assistance | Entitled retrieval and reviewed proposals R34-R37 | 50-case evaluation is a scoped fixture, not general correctness; data/model permissions and first-use controls gate launch |
-| 12–15 | Marketplace, comparison and human battle cards | Offers/eligibility/selection R12-R14; governed source content R34 | Human comparison/battle-card UI is deferred from thin pilot, not delivered by AI indexing. Product/Catalog must specify comparison fields, versioned human views, rights and acceptance tasks before expanded Marketplace claim; revisit at R08/R39 |
-| 16 | Technical rule families | Versioned digest and port/power/license seed R19-R24 | GPU capacity, SD-WAN bandwidth/resilience, IoT protocol/power and additional compatibility families are excluded until technical owner supplies rule sources/expected cases and funds validation. Unsupported products/configurations cannot receive “technically valid” quotes; OD-03/R08 restrict pilot catalog accordingly |
-| 17 | Multisite profiles/overrides | Versioned 60-site fixture R31-R33 | Broader scale and vendor-specific semantics require new evidence; Product decides at R39 |
-| 18–19 | Common quote and branded proposal | One authority, immutable approved version, native-edit/expiry guards R19-R24 | No automatic deal-won/order/payment workflow; R49 separate business case |
-| 20–21 | Customer lifecycle breadth | HubSpot plus one explicitly selected source-owned lifecycle feed R43 | Full asset/license/contract/support/renewal breadth deferred pending OD-10 source/owner/field map and small tasks. No detailed CMDB replication; Product/data owners decide before R43/R44 release claims |
-| 22–23 | Business/operational report breadth | One named report with genuine PDF/Excel/CSV/PPT proof R44/R45 | Portfolio, partner performance, pipeline, utilization and other report families require Product-approved metric/source/filter definitions and privacy review; revisit R08/R45 before declaring report suite complete |
-| 24 | Partner human resources | R34 governs source knowledge only | Human resource library/navigation/download experience is deferred, not equated with retrieval. Product/content owner must select resource types, publishing/rights/expiry and accessible human experience, then fund tasks before resources launch; revisit R08/R39 |
+| Source intent / physical pages | Current user direction | Priority / backlog |
+| --- | --- | --- |
+| Connected experience, pp. 1–3 | Home/Opportunities/Marketplace/Resources navigation; agent available on all pages, no AI menu | P1 R01/R10/R51-R55; P3 R58-R60 |
+| CRM context, pp. 4–5 and 20–21 | HubSpot-sourced Home aggregates partner/sales/leads/promotions/opportunities and includes customers; field/metric mapping first | P1 R02/R03/R16/R17/R51/R52/R54; old R43 superseded |
+| Catalog/compare, pp. 12–15 | Marketplace lists products we sell and generates a proposal, not a direct sale; battle cards move to Resources | P2 R04/R12-R14; P1 R53/R55 |
+| Quotes, pp. 18–19 | Prices/quotes in Opportunities; complete proposal price/BOM in HubSpot; 30-day validity confirmed | P2 R05/R18-R26/R56/R57 |
+| Resources, p. 24 | Findable structure of files in HubSpot, including human battle cards | P1 R53/R55; AI knowledge R34 follows |
+| AI assistance, pp. 10–11 | Rename to AI Sales Support, mandatory governed agent on every active page | P3 R34-R39/R58-R60; initial release cannot omit it |
+| Floor/site design, pp. 6–7 and multisite p. 17 | Rename Site Designer and combine multisite concept inside it | P4 R27/R28/R31-R33/R40; do not initialize |
+| Discovery, pp. 8–9 | Discovery finds all observable items on authorized network; import-only does not meet full goal | P4 R29/R30/R41/R42; no scans/initialization now |
+| Technical rules, p. 16 | Retain exact configuration/approval integrity for included proposal products; broader design families later | P2 R19-R24; no unsupported validity claims |
+| Reports, pp. 22–23 | Home metrics first, broader reporting later with separate scope | P1 R51/R52; R44/R45 parked |
 
-R01/R08 record included/excluded scope; R19 rejects uncovered rule families; R39/R43/R45 verify that claims match actual accepted scope. If Cleber does not accept a narrowed pilot, scope must be expanded and re-estimated before implementation approval. Mockup quantities are not measured scale, prices, current vendor rights or revenue.
+The latest direction explicitly defers Site Designer and Discovery, and removes prior proposed deferral of the basic human Resources/battle-card experience. Additional full-text search, broad reporting, non-Wi-Fi simulation and rule families still require scope decisions. Mockup figures remain illustrative, not measured capacity or prices.
 
 ## Exact EA revision inputs
 

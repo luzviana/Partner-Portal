@@ -1,5 +1,6 @@
 # ADR-0007 Infrastructure and operating model
 
+**Latest user scope:** [HubSpot-first priority plan](../priority-plan.md) supersedes old five-service/phase assumptions. AI Sales Support is cross-page with no menu item; Site Designer includes multisite; Site Designer/Discovery are deferred and not initialized. Existing review and control obligations remain.
 - Status: **Proposed**, except the explicit review gate which applies immediately.
 - Date: 2026-10-06
 - Accountable roles: Platform + Security + Delivery + service operators; named acceptance pending.

@@ -1,30 +1,20 @@
-# NGENI-5 architecture review package
+# NGENI-5 current planning package
 
-**Author revision 1. Documentation only. EA v3 re-review pending. User approval pending. No implementation authority.**
+**Author revision 2: latest reviewed HubSpot-first scope. Documentation only. Revised-scope EA review and implementation approval pending.**
 
-The portal integrates five independent services, potentially supplied by different solutions. HubSpot is the existing CRM. Shared product/pricing data are a candidate capability with a scoped authority and isolation decision, not permission to centralize customer data.
+Start with [priority plan](priority-plan.md), [proposal](proposal.md), [CTO narrative](decision-brief.md), [solution comparison](solution-analysis.md) and [backlog](backlog.md) / [JSON](backlog.json).
 
-## Review order
+1. HubSpot integration, Home/Opportunities/Resources.
+2. Simplified Marketplace producing a 30-day proposal with complete price/BOM in HubSpot.
+3. Mandatory AI Sales Support on all pages, without a menu item.
+4. Site Designer including multisite, and Discovery: deferred, not initialized.
 
-1. [EA review request](reviews/ea-review-request.md) and [approval status](reviews/status.md)
-2. [Source evidence and strategy traceability](source-evidence.md)
-3. [Current proposal](proposal.md) and [service boundaries](service-boundaries.md)
-4. [EA governance reconciliation](governance-reconciliation.md)
-5. [Solution analysis and evidence gaps](solution-analysis.md)
-6. [API and event contract inventory](contracts.md)
-7. [Architecture decision register](decisions/README.md)
-8. [Current CTO decision brief](decision-brief.md), [author dispositions](reviews/author-revision-1.md) and [open decisions](decisions/open-decisions.md)
-9. [Authority and lifecycle](authority-and-lifecycle.md), [quote/CRM controls](quote-and-crm-controls.md) and [first-use/operations gates](release-and-operations.md)
-10. [Backlog](backlog.md) and [machine-readable records](backlog.json)
+Supporting controls: [boundaries](service-boundaries.md), [contracts](contracts.md), [authority/lifecycle](authority-and-lifecycle.md), [quote/CRM controls](quote-and-crm-controls.md), [release/operations](release-and-operations.md), [ADRs](decisions/README.md), [open decisions](decisions/open-decisions.md), [source coverage](source-evidence.md) and [review status](reviews/status.md).
 
-## Current CTO presentation
+## Historical artifacts and review evidence
 
-[Review draft 3](cto-presentation.md) provides an editable PowerPoint and PDF based on canonical commit `abfaf501324deaefdf3c747b2d085544e37bb21c`, including the requested option comparisons. It remains a discussion draft pending review and approval.
+The revision-2 Word/PowerPoint files and revision-3 CTO PPTX/PDF under output/ngeni5 predate this new user scope. They are historical, not current approval targets. [Revision-3 slide transcript](cto-presentation.md) remains intact with a superseded notice. Current CTO content is decision-brief.md; exported slides need refresh to this scope before use.
 
-## Source of truth
+The [author revision 1 dispositions](reviews/author-revision-1.md) and prior EA report references remain exact historical evidence, not approvals of revision 2. [Scope change record](reviews/scope-revision-2.md) identifies what must be re-reviewed. Coordinator owns review routing; no author messages were sent.
 
-Markdown and JSON in this directory are the reviewable repository sources. The original Architecture Proposal and Implementation Backlog DOCX files and `NGENI-5_CTO_Presentation.pptx` under `output/ngeni5` are retained revision-2 snapshots. The separately named `NGENI-5_CTO_Review_rev3` PPTX/PDF files are the current presentation draft. They predate the EA reconciliation in author revision 1 and must not be treated as the latest or approved baseline. After review findings are reconciled, regenerate presentation artifacts from the agreed repository content before requesting user approval.
-
-The strategy PDF is intentionally not published in this public repository. Its verified checksum and authorized reviewer access are recorded in source-evidence.md. User clarification of independent services and HubSpot usage is authoritative.
-
-No application code, runtime dependency, infrastructure deployment or live CRM configuration is introduced by this PR. No PR merge, reviewer silence, automated check or proposed ADR confers implementation approval.
+User clarification takes precedence over earlier five-service topology and old phase sequencing. Runtime selection, HubSpot rights, data policy values and named acceptance remain unresolved. No application code/configuration, account changes, deployment, procurement, merge or task mutation is authorized. The source PDF is unchanged and is not republished in this public repository.

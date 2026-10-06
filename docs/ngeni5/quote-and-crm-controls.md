@@ -1,5 +1,6 @@
 # Quote integrity and CRM reconciliation
 
+**Scope revision:** [Latest reviewed priority plan](priority-plan.md) supersedes earlier five-service and P0–P3 sequencing. HubSpot integration is Priority 1, proposal-only Marketplace Priority 2, cross-page AI Sales Support Priority 3. Site Designer/multisite and Discovery are Priority 4, not initialized. The controls below remain applicable to relevant capabilities, not authority to launch deferred work.
 Proposed controls for PP-EA-05/11; no quote platform selected or live workflow tested.
 
 ## Technical evidence and transitions
@@ -36,3 +37,11 @@ HubSpot remains CRM master. R03 assigns one field writer; R16-R18 own a durable 
 Product/CRM owner must set maximum attempts, backoff ceiling, total uncertainty deadline, operator response target and escalation in R03 before R18. These are unset owner gates. Rate limits honor provider retry guidance; token revocation suspends dispatch and alerts owner; deletion tombstones mapping rather than triggering recreate. Reordered notifications reread canonical state. Pending sync never claims CRM success, alters a quote or automatically marks a deal won.
 
 R17/R18/R24 future proofs include timeout after remote success with delayed search visibility, duplicate/reordered events, revocation, rate limit, deletion and conflicting remote fields. No duplicate create while uncertain. A CRM outage policy may allow continued design with a timestamped projection, but stale authorization fails closed and issue policy is an OD-07 decision.
+
+## Confirmed proposal-only commercial scope
+
+The latest user instruction requires a proposal valid for 30 days, stored in HubSpot with price and BOM, and surfaced under Opportunities. It prohibits a direct-sale Marketplace. R56 selects issuance clock/time-zone semantics with Commercial; a proposed issuance-based anchor is an assumption until accepted. R57 proves exact expiry across portal, document and HubSpot, expired-revision refusal and new-version renewal. An upstream price validity shorter than 30 days needs an approved honoring policy before issue; never silently shorten validity.
+
+No payment/checkout/order, automatic deal-won or autonomous customer send is included. Persist full versioned structured BOM and prices plus artifact/associations in HubSpot; a summary amount or external URL alone is insufficient. Publish “stored” only after readback, and require verified persistence before issuance in the proposed current workflow. Native current quotes versus another supported account representation is still gated by capability proof. Existing technical digest, approval, revocation and Uncertain/NeedsOperator controls are preserved.
+
+Thirty-day commercial validity is not a retention period: historical proposals remain or are deleted under the separately approved record-class retention/hold policy. Expiry changes usability as an offer, not automatic deletion of the audit/BOM record.

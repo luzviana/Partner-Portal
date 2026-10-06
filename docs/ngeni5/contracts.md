@@ -1,5 +1,6 @@
 # Proposed API and event contract inventory
 
+**Scope revision:** [Latest reviewed priority plan](priority-plan.md) supersedes earlier five-service and P0–P3 sequencing. HubSpot integration is Priority 1, proposal-only Marketplace Priority 2, cross-page AI Sales Support Priority 3. Site Designer/multisite and Discovery are Priority 4, not initialized. The controls below remain applicable to relevant capabilities, not authority to launch deferred work.
 **Design inventory only. No API implementation or approved endpoint is introduced.** Search existing domain contracts before defining new operations. User, workload and deployment authority must derive from verified identity and trusted configuration, not caller-selected tenant or CRM IDs.
 
 | Contract | Provider responsibility | Exposure / intended consumers | Required boundary and evidence |
@@ -41,7 +42,7 @@ These are design criteria for EA and owner review, not executed tests or impleme
 | HubSpot | Define field authority and conflict policy. Verify callbacks using provider-supported mechanisms, deduplicate deliveries, bound retries and reconcile by readback. CRM identifiers alone never authorize access. |
 | Quote approval | Bind approval to immutable quote revision and price evidence; specify edit invalidation and separation of preparation, approval and override responsibilities. |
 | Discovery and imports | Bind collectors to approved solution/environment and scan scope. Constrain egress, malicious imports, file parsing and resource consumption. |
-| AI builder | Authorize retrieval and export; treat retrieved content as untrusted. No autonomous commercial commitment or infrastructure mutation. Establish retention, provider use terms and deletion/export behavior. |
+| AI Sales Support | Authorize retrieval and export; treat retrieved content as untrusted. No autonomous commercial commitment or infrastructure mutation. Establish retention, provider use terms and deletion/export behavior. |
 | Operations | Specify elevation, credential rotation, audit protection, recovery objectives, restore evidence, incident ownership and vendor exit. Numerical objectives remain owner decisions. |
 
 Map accepted evidence into existing backlog items during findings reconciliation. No implementation authority follows from this table.
@@ -53,3 +54,15 @@ The identifier/cardinality and grant model in [authority and lifecycle](authorit
 Quote operations use the configuration digest, rule version, exact commercial evidence and state guards in [quote/CRM controls](quote-and-crm-controls.md). CRM command results expose Pending/Uncertain/NeedsOperator/Confirmed rather than hiding uncertain writes. Retries cannot create a duplicate after delayed visibility.
 
 [CON and first-use mapping](release-and-operations.md) assigns schema, supported-version/rollback, limits and consumer evidence to R05, R12-R18, R22, R28/R33, R34/R35, R38 and R43-R45. The backlog repeats these gates in both formats. No independently released consumer waits until R46 for compatibility proof. Package API ownership/runtime is OD-09, resolved before R15 using [exchange alternatives](service-boundaries.md). No extra exchange service is selected by this inventory.
+
+## Current-priority contract additions
+
+| Contract | Scope and owner | First-use evidence / items |
+| --- | --- | --- |
+| Home aggregate | HubSpot adapter, CRM/Product metric owners | Partner/customer/opportunity grants before aggregation; lead/sales definitions, promotion source/validity, currency/date filter, freshness, empty versus unavailable; R03/R16/R51/R52/R54 |
+| Opportunities detail | Adapter and Commercial | Scoped HubSpot reference, prices/BOM/proposal revisions, no duplicate revenue; R16/R18/R20/R24 |
+| Resources find/open | HubSpot Files source, content owner and portal adapter | Authorized metadata search/filter and private download; battle cards included, taxonomy/version/expiry, revocation and untrusted content; R53/R55 |
+| Proposal persist/read | Selected single authority and HubSpot adapter | Complete versioned price/BOM, artifact, 30-day validity, consistent association/readback, pending/uncertain outcome; R05/R18/R20/R56/R57 |
+| AI Sales Support tools/context | Agent owner, each data provider | Page/opportunity context reauthorization, cite source, no broad CRM proxy, read tools and proposed draft actions, human review and cross-page revocation; R34-R37/R58-R60 |
+
+Current package/BOM contract needs Marketplace and HubSpot consumers first. Future Site Designer/discovery imports must not become prerequisites to this contract. Rendering/store choices must fit HubSpot persistence and private artifacts, not an assumed central exchange runtime. AI native standalone UI tests are replaced by all-page availability/context tests.

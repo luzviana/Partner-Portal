@@ -1,33 +1,15 @@
-# ADR-0001 Independent business services
+# ADR-0001 Revised portal and capability model
 
-- Status: **Proposed**, except the explicit review gate which applies immediately.
-- Date: 2026-10-06
-- Accountable roles: Product + each service owner; named acceptance pending.
-- EA v2: changes required against a60a88d; author revision awaits exact-commit v3; no approval recorded.
-- User implementation approval: pending, no approval recorded.
+Status: **Proposed architecture; latest user scope confirmed.** This record supersedes the earlier mandatory five-independent-service topology. No implementation, merger, vendor selection or deployment approval.
 
-## Context
+## Current requirement
 
-User requires five independently usable services, each possibly supplied by a different solution.
+Home, Opportunities, Marketplace and Resources form the initial portal navigation. AI Sales Support is a mandatory agent on every page with no menu item. Site Designer absorbs Floor Plan and multisite concepts. Discovery covers all observable items in authorized networks. Site Designer and Discovery are Priority 4 and must not be initialized now.
 
-## Proposed direction
+## Proposed boundaries
 
-Five named business boundaries with native access, source ownership and supported contracts.
+Portal presentation and server-side HubSpot adapter serve scoped source data. Marketplace owns product selection, while Opportunities contains proposal/price/BOM workflow. Agent tools and context have explicit authorization and operational boundaries without requiring a separate standalone product. Assess modules versus services against ownership/isolation/operations, not menu labels. Existing SSO remains authentication provider and applications own grants.
 
-## Alternatives
+## Evidence and gates
 
-Single modular application is superseded; separate SaaS/self-hosted/custom solutions remain candidates.
-
-## Evidence needed before decision
-
-Define each operating owner and whether source repository and deployment separation are needed.
-
-## Consequences and current disposition
-
-User requirement confirmed; implementation form not approved. The proposal must account for operating cost, security/isolation, compatibility and rollback before adoption. Relevant findings belong in [review status](../reviews/status.md), and revisions must be reviewed against their exact commit. No accepted implementation decision is inferred from a draft document or a merged documentation PR.
-
-## Author revision 1 response
-
-Five independent business services remain a confirmed requirement; internal modules are not automatically independent runtimes. No selected vendor or topology follows from this requirement.
-
-Incorporated design: [service-boundaries.md](../service-boundaries.md). Decision gate: OD-01/06/08 in [open decisions](open-decisions.md). Acceptance mapping and evidence are in the [finding register](../reviews/author-revision-1.md).
+[Priority plan](../priority-plan.md), [boundaries](../service-boundaries.md) and R01/R02/R03/R51-R60 define current work. EA must re-review changed boundaries at the exact revised commit. Existing isolation/lifecycle/contract controls continue to apply. Coordinator routes review; user and applicable owners/Security must approve consequential work before implementation. Old five-service acceptance tests and independent AI/multisite menu requirements no longer apply.

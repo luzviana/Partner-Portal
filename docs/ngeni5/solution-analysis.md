@@ -1,53 +1,45 @@
-# Solution alternatives and selection evidence
+# Solution choices for the simplified portal
 
-Author revision 1. This comparison incorporates the [EA research](solution-research-evidence.md) at exact commit `5b9fc35daad180e05ee564eb80bbf16eff6124bb`; its cited primary sources were checked by EA on 6 October 2026. Author desk review is not fresh vendor-account verification. No vendor is selected. Actual licenses, prices, rights, account features, region, support and runtime results remain unverified.
+Author revision 2. Scope changed to a HubSpot-first portal and proposal-only Marketplace. This narrows the earlier [EA research](solution-research-evidence.md), which remains dated evidence rather than a selection. No account inspection, purchase or vendor trial occurred.
 
-## Non-tradeable selection gates
+## Current recommendation and alternatives
 
-For **each capability and candidate**, R04/R07 must record: authorized partner/customer/solution/environment isolation (including support/restore); approved SSO/direct access and local grants; versioned API or reviewed export/import with fidelity; legal rights for intended users, distribution and embedding where used; field ownership; region/lifecycle/deletion/backup; export/exit; and funded operator. Evidence labels are documented, demonstrated, contractually confirmed, unknown or failed. A documented feature is not proof of an end-to-end gate. Unknown or failed hard gates prevent selection/configuration/use. R08 may exclude the capability with explicit Product scope acceptance and user/EA gates; it cannot call an unknown a pass or substitute an undocumented exception.
-
-Manual import is a separately scoped capability: record fields retained/lost, human mapping/validation, labor per handoff, error recovery, authorized storage and supported outcome. It cannot claim automated round-trip, RF accuracy, active scanning or full technical validation. R40-R42 test expanded capability later; they cannot retroactively authorize R27/R29 or earlier vendor use.
-
-## Candidate evidence and provisional direction
-
-All candidates below are **not selected**. “D” identifies documented research evidence only; all unproven hard gates remain unknown. Accountable roles must obtain named acceptance; no reviewer or vendor has supplied it here.
-
-| Capability / candidate | Evidence and differentiating tradeoff | Unknown hard gates / decision-changing proof | Accountable role |
+| Option | Fit for the revised need | Tradeoff / evidence needed | Disposition |
 | --- | --- | --- | --- |
-| Marketplace: thin custom | Maximum control over comparison/eligibility; all stewardship/search/support must be built | Complete same 20-offer proof as purchased routes; isolation, recoverability and 3-year staffing cost unknown | Product + Technical lead |
-| Marketplace: Medusa | D: product variants and pricing rules; commerce foundation, not complete technical CPQ | NRC/MRC, historic price reproduction, partner costs/grants, edition-specific rights and support/exit need proof | Catalog + Solutions |
-| Marketplace: CloudBlue Commerce/Connect | D: Commerce channel/storefront/billing; Connect catalog/API has different scope | Purchased scope/price, portfolio, HubSpot coexistence, SSO, regional partner rights and export; exclude unneeded billing master | Commercial + Solutions |
-| Quoting: HubSpot current Quotes | D: qualifying subscription, associations, UI/workflow-centered approval and template constraints | Actual account/API version, native-edit guard, recurring terms, 20-page/site/diagram proposal and cost hiding unknown | CRM admin + Commercial |
-| Quoting: QuoteWerks Web | D: HubSpot integration, item/deal mapping, configurable deal completion | API/SSO/partner rights, narrow permissions, native bypass prevention, multisite/NRC/MRC/version export unknown; no automatic deal-won | Commercial + CRM admin |
-| Quoting: conditional ERPNext | D: quotations/pricing; GPLv3 code licensing per researched release | Wider ERP need unconfirmed; no competing CRM/product master; recurring terms, grants, audit, extensions and operations proof needed | Commercial + Platform |
-| Quoting: custom | Exact technical digest/approval semantics possible; highest correctness/maintenance ownership | No implementation evidence; compare 3-year costs and own all commercial rules, security and exit | Commercial + Technical lead |
-| Planning: Hamina | D: OpenIntent import/export; survey data and some switch power/port/geometry fields omitted; named users and controlled report-sharing needed | Partner/SSO/API/embedding rights, identity/data region, isolation/restore and fidelity unknown; missing technical facts require governed enrichment | Solutions + Security |
-| Planning: incumbent specialist / custom geometry | Incumbent license/API unknown; custom placement is not RF simulation | No Ekahau integration claim; prove chosen supported handoff. Custom needs file/geometry/exit evidence; specialist accuracy separate | Solutions |
-| Discovery: runZero | D: scoped export/API, tier differences, richer JSON than CSV and SAML constraints | SaaS organization does not prove isolated restore/failure; partner federation, account rights, scope and coverage unknown | Discovery owner + Security |
-| Discovery: approved importer / optional NetBox | Limited assessment without scanner; D: NetBox is network source of truth, not observation collection | Select observation schema and permitted source files. NetBox only after OD-10/iTop reconciliation; no implicit new master | Discovery + data owner |
-| Discovery: custom scanner | Maximum integration responsibility, protocol maintenance and operational risk | Nmap/other distribution rights, authorized targets, secrets and kill switch must pass before scans | Security + Solutions |
-| AI: managed inference + owned orchestration | D: managed provider shared responsibility; avoids model-serving operation | Exact model terms/region/logging, prompt retention, isolation, cost and deletion unknown; service still owns tools/grants/evaluation | AI owner + Security |
-| AI: vLLM + separately licensed model | D: serving software, API-key protection does not cover every endpoint | Model rights, full endpoint/egress security, GPU cost/on-call and context isolation unknown | AI owner + Platform |
-| Multi-Site: thin custom / supported vendor extension | Custom suits versioned profiles/overrides; researched vendors do not establish turnkey fit | Same 60-site diff/repeat/rollback test for both; independent access, contracts and total ownership cost determine choice | Product + Technical lead |
-| Runtime: incumbent / Fargate / Container Apps | D: task isolation or revision/jobs/scaling features; commodity managed services possible | Region, networking, separate state recovery, keys, operator and cost unknown. No new Kubernetes or cloud selected | Platform |
-| Reporting: owned projection / Power BI / Superset | D: BI identity/security models need separate export/cache verification; Superset configuration not endorsed by research | External rights, scoped service principals, all formats and revocation/backup proof unknown; start with minimized scope | Reporting + Security |
+| Thin custom catalog/selection UI + HubSpot proposal workflow | Directly serves our products, quantities, BOM and opportunity without checkout | Own the small integration, grants, rendering and reconciliation. Confirm catalog source and actual quote entitlement/30-day behavior | Leading design recommendation, not implementation selection |
+| Thin UI + supported HubSpot deal-associated proposal/BOM representation | Keeps proposal, price and BOM in HubSpot if native quoting cannot fit | Must prove structured BOM, version history, artifacts and 30-day enforcement in supported account features. A total or link alone is insufficient | Conditional fallback, no custom-object entitlement assumed |
+| Medusa product/pricing foundation + HubSpot integration | May help if existing catalog tools are inadequate or catalog administration is substantial | Adds software/operations and mappings. Quote/order examples are building blocks, not automatic fit; omit order/payment flow | Conditional challenger after catalog gap evidence |
+| CloudBlue channel commerce | Broader supplier/channel/subscription functions than the current requirement | Rights, cost and another platform lifecycle; no present requirement for its wider commerce scope | Park initial evaluation unless a specific required gap justifies it |
+| QuoteWerks | Specialist challenger if HubSpot proposal/approval capability demonstrably fails | Adds quoting authority and integration ownership; must still persist full agreed proposal evidence in HubSpot | Escalation option after native fit failure |
+| ERPNext or fully custom CPQ | Broad commercial scope or maximal control | More responsibility and potential master overlap than simple proposal generation | Outside initial shortlist absent a documented necessity |
 
-Existing ngenious SSO is consumed, not re-procured. SSO's conditional Keycloak selection and application-local authorization remain in ADR-0004. IdP substitution requires an enterprise capability decision, not a portal-local shortcut.
+This preference is an architectural inference from the reduced scope, not a measured cheapest option. Assess total cost for equal scope, including integration, licenses, stewardship, operations and exit. No price or purchased capability is known. The user's 30-day validity and HubSpot price/BOM persistence are mandatory comparison cases, not optional scores.
 
-## Comparable proof cases and decision rule
+## Current primary-source checks
 
-Marketplace: the same 20 authorized offers, two partners with different prices/grants, revocation, historic quote, human comparison, protected cost, canonical export and restore. Add same-partner/different-customer and same-customer/different-grant cases.
+HubSpot's current Quotes API documents expiry and required quote associations, distinguishes current versus legacy capabilities and ties current quote creation to qualifying Revenue Hub subscriptions. Approvals are primarily UI/workflow managed. Payment configuration can be enabled by account setup, so the selected flow must explicitly prove no checkout/payment behavior. These documented features do not verify the user's subscription or workflow. [HubSpot Quotes API](https://developers.hubspot.com/docs/api-reference/latest/crm/objects/quotes/guide).
 
-Quote: hardware NRC; service MRC/term; mixed NRC/MRC; partner prices; volume tiers; discount/margin; country/currency/tax; 60-site overrides; expiry/revision; rejected technical dependency and corrected resubmission. Commercial supplies expected answers. Add native 20-AP switch/license removal bypass, delayed CRM visibility, revoked grants and 20-page proposal/template tests. Unknown expected amounts block evaluation; vendor output cannot grade itself.
+HubSpot publishes product APIs that can be evaluated as the catalog source. Existing catalog completeness, commercial field ownership and partner-specific pricing still require inventory. [HubSpot Products API](https://developers.hubspot.com/docs/api-reference/latest/crm/objects/products/guide).
 
-Planning: representative calibrated multiple-floor plan with APs/wired devices and canonical mappings; enumerate every lost field, accuracy source and manual enrichment. Non-Wi-Fi capabilities remain separately scoped. Discovery: known inventory with unknown devices, scoped targets, local credentials, kill switch, duplicates/reordering/offline recovery and human dispositions; imports do not prove scans. AI: same 50 grounded domain cases plus adversarial/revocation cases, accepted-solution cost and unauthorized-action rate. Multi-Site: 60 sites, 40-profile application, one override, profile diff, repeat, totals, rollback and unchanged historic quote.
+The Files API provides file/folder operations and temporary access for private files. Portal grants, findability, file expiry and prevention of cross-partner download still need an explicit design. [HubSpot Files API](https://developers.hubspot.com/docs/api-reference/latest/files/guide).
 
-After all hard gates pass, propose scoring workflow fit 30%, integration/fidelity 25%, three-year TCO 20%, operating/recovery fit 15%, exit 10%. Product/Commercial must ratify weights. No unknown receives a passing score. Provisional sequence: HubSpot versus QuoteWerks first; Medusa/CloudBlue versus thin custom; Hamina/incumbent specialist before bespoke RF; scoped discovery/import before custom scanning; owned Multi-Site unless a supported extension wins. These are evaluation priorities, not awards.
+Medusa documents a custom quote-management example using commerce primitives. It illustrates extensibility, not an off-the-shelf guarantee of this HubSpot workflow. [Medusa quote-management example](https://docs.medusajs.com/resources/examples/guides/quote-management).
 
-## Cost and exit model
+## Priority 1 proof determines Priority 2 selection
 
-`3-year TCO = implementation + integration + migration + 36 × (licenses + cloud + support + stewardship + operations) + upgrades + assurance + exit`.
+R02/R03 establish account/API/object/access constraints. R51/R53 map Home and Resources. R54 proves the integrated read experience under approved first-use gates. R04/R05/R56 then compare native quote versus supported proposal/BOM representation on the actual approved account model. Selection requires:
 
-Low/base/high scenarios must use owner-supplied volumes and loaded labor rates. Two pilot partners and ten-partner load scenarios remain unapproved fixtures. Separate internal/external named seats, scanned assets, API quotas, inference, storage/export, support tiers and manual handoff labor. Pin actual release/edition/extensions/model licenses; Medusa enterprise carve-outs, ERPNext GPLv3, NetBox/vLLM Apache-2.0 are research leads, not blanket rights determinations. No monetary winner is calculable yet.
+- Our authorized product list and expected quantities/prices, with partner/customer grants enforced.
+- A versioned proposal with complete structured BOM/price stored in HubSpot and visible under the correct opportunity.
+- Exactly 30-day customer validity under an agreed clock policy, with expired revisions blocked and renewed through a new version.
+- No direct purchase/payment/order or automatic deal-won; no automatic customer send.
+- Technical/commercial revision controls, explicit approval and native-edit bypass proof.
+- Timeout/partial-write reconciliation, preserved historical BOM/price, private artifacts, revoked access and export/restore.
 
-For each candidate obtain export sample and restore/exit procedure, deletion and backup expiry, identity/grant portability, deprecation/version support, data processing/residency, incident support, contractual permitted use and estimated migration labor. If necessary data cannot leave, state the excluded capability or reject selection. R04/R07 produce evidence and follow-on tasks; R08 records owner-backed selection or explicit exclusion before any configuration. Procurement, trials with spend/account changes and real data remain outside current authorization.
+Unknown rights, account capability, isolation, persistence or expiry behavior blocks the affected route. Manual staff completion is a possible explicitly agreed workflow, not an excuse to claim automation. Provider-specific work and actual evidence follow existing approval gates.
+
+## Other priorities
+
+AI Sales Support is mandatory Priority 3: compare managed inference with owned authorization/tools against self-hosted inference only where policy/utilization justifies operations. The agent is present on every page, not a standalone navigation app. Accept grounded CRM/catalog/resource assistance, human-reviewed drafts, context isolation and safe failure before completing the initial release.
+
+Site Designer (including multisite) and Discovery are Priority 4, not initialized. Preserve specialist research for later without trials, new repositories or active procurement. Future Discovery must target all observable device classes on authorized networks and report unknown/unreachable gaps; import-only assessment is not fulfillment of that requirement. No cloud, model, vendor or production architecture is selected here.
