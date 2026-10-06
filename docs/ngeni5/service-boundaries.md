@@ -26,3 +26,17 @@ The user's permission to share product/pricing data does not authorize sharing d
 Services may share repository conventions and managed infrastructure only within an approved boundary. No consumer writes or reads another product's database. Native vendor APIs remain implementation surfaces behind governed contracts for external/customer integrations. Native UI access is limited to approved users and vendor roles.
 
 Each boundary needs a named provider owner, consumer list, service identity, contract version, independent release/rollback, restore/export path and failure behavior. No additional repository, common gateway or enterprise-wide broker is selected by this draft.
+
+## Authority and first-use constraints
+
+The [authority/placement/lifecycle model](authority-and-lifecycle.md) is part of every boundary. A service workspace belongs to one solution/environment, not merely a partner tenant. Local grants determine access; portal links are only projections. Discovery owns observations, never implicitly iTop's detailed inventory. Lifecycle/reporting may hold only approved minimized projections. [Release checklists](release-and-operations.md) apply before each service's first exposure; every vendor must pass [selection gates](solution-analysis.md).
+
+## OD-09 package exchange alternatives before R15
+
+| Form | Provider/consumers and benefits | Burden / selection evidence |
+| --- | --- | --- |
+| Provider-owned package module | Quote provider owns durable submitted packages; five independent tools consume its versioned submission/read contract. Lowest added runtime count. | Quote outage affects intake; retention/export and independent contract evolution required. Proposed first option to evaluate, not selected. |
+| Contract plus source/target adapters or reusable library | Schema owned by named package provider; source services retain artifacts, target records accepted copy/digest. Avoid central store. | Library alone cannot own durable receipt, replay or audit. Allocate these to providers; prove historical quote survives source unavailability/deletion policy. |
+| Separate exchange service | Named exchange provider owns intake/receipts, durable packages and fanout; tools and quote consume it independently. | Extra identity/store/backup/on-call and cost. Justify reuse/failure value and funded ownership over module approach. |
+
+Technical lead records consumer inventory, package custodian, retention, failure/recovery, support and incremental three-year TCO in R05/R08. OD-09 is a hard predecessor to R15. No new runtime/repository is implied by “exchange”; R50 only revisits measured decomposition later. Five independent business services persist under every option.

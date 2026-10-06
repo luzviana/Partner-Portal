@@ -2,8 +2,8 @@
 
 - Status: **Proposed**, except the explicit review gate which applies immediately.
 - Date: 2026-10-06
-- Owner: Partner-Portal proposal author; accountable business/technical owners to be confirmed.
-- EA review: pending, no approval recorded.
+- Accountable roles: SSO owner + application owners + Security; named acceptance pending.
+- EA v2: changes required against a60a88d; author revision awaits exact-commit v3; no approval recorded.
 - User implementation approval: pending, no approval recorded.
 
 ## Context
@@ -27,3 +27,9 @@ Obtain owner acceptance and supported claims/flows, lifecycle and native vendor 
 ## Consequences and current disposition
 
 Proposed; affected owner acceptance pending. The proposal must account for operating cost, security/isolation, compatibility and rollback before adoption. Relevant findings belong in [review status](../reviews/status.md), and revisions must be reviewed against their exact commit. No accepted implementation decision is inferred from a draft document or a merged documentation PR.
+
+## Author revision 1 response
+
+Preserve direct application login and local grants. EA v2 resolved PP-EA-02 in design only. Provider acceptance, registration, named owners and runtime evidence remain pending. Remote SSO baseline fbd3b3f7406411155a4a9616df96540570ba4585 has the same three ADR contents according to pinned EA v2.
+
+Incorporated design: [authority-and-lifecycle.md](../authority-and-lifecycle.md). Decision gate: OD-05 in [open decisions](open-decisions.md). Acceptance mapping and evidence are in the [finding register](../reviews/author-revision-1.md).

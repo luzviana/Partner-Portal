@@ -25,7 +25,7 @@ Requesting repository: Partner-Portal. Affected repository: SSO. Status: Draft, 
 
 Observable need: approved users access the portal and each independent service with supported single sign-on while product services retain authorization. Workload tokens need distinct audiences/scopes. Native vendor SSO compatibility must be assessed separately.
 
-Provider changes: unknown until existing contract is inspected. API/claims, registration, configuration and deployment effects require SSO owner assessment. Domain data/schema changes in SSO are not requested. Partner-Portal owns clients, role/grant mapping, sessions and negative tests. No edits to SSO are authorized here.
+Provider ADR baseline is inspected; supported runtime claims/client onboarding still require owner confirmation. Provider changes remain unknown until the concrete integration contract is assessed. API/claims, registration, configuration and deployment effects require SSO owner assessment. Domain data/schema changes in SSO are not requested. Partner-Portal owns clients, role/grant mapping, sessions and negative tests. No edits to SSO are authorized here.
 
 Compatibility: preserve existing clients, use approved claims and deprecation policy. Rollback: disable the new consumer registration and local routing without disrupting existing consumers. Acceptance: login/logout, revocation, wrong audience, forged solution context, support access and direct-native service tests. Required approvals: SSO owner plus applicable EA and user scope approval before implementation.
 
@@ -45,3 +45,11 @@ These are design criteria for EA and owner review, not executed tests or impleme
 | Operations | Specify elevation, credential rotation, audit protection, recovery objectives, restore evidence, incident ownership and vendor exit. Numerical objectives remain owner decisions. |
 
 Map accepted evidence into existing backlog items during findings reconciliation. No implementation authority follows from this table.
+
+## Author revision 1 binding semantics and timing
+
+The identifier/cardinality and grant model in [authority and lifecycle](authority-and-lifecycle.md) applies to every contract: `partner_id` is not the protection boundary; `customer_id`, `solution_id`, trusted `environment_id`, service-namespaced `workspace_id` and explicit local grants are distinct. CRM references include account/object/record and never authorize access. Use server-derived environment binding and reauthorize source/destination transfers. Retention, revocation, job/cache/export/backup bounds and restore tombstones are contract requirements with owner-set numeric gates before real data.
+
+Quote operations use the configuration digest, rule version, exact commercial evidence and state guards in [quote/CRM controls](quote-and-crm-controls.md). CRM command results expose Pending/Uncertain/NeedsOperator/Confirmed rather than hiding uncertain writes. Retries cannot create a duplicate after delayed visibility.
+
+[CON and first-use mapping](release-and-operations.md) assigns schema, supported-version/rollback, limits and consumer evidence to R05, R12-R18, R22, R28/R33, R34/R35, R38 and R43-R45. The backlog repeats these gates in both formats. No independently released consumer waits until R46 for compatibility proof. Package API ownership/runtime is OD-09, resolved before R15 using [exchange alternatives](service-boundaries.md). No extra exchange service is selected by this inventory.

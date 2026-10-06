@@ -4,7 +4,7 @@
 
 NGENI-5 proposes a Partner Portal integrating independent Marketplace, Floor Plan, Discovery, AI Solution Builder and Multi-Site Designer services. They may use different purchased or custom solutions and consume governed product/pricing data. HubSpot is the existing CRM. The work is planning-only, with no implementation authorization.
 
-Please review the PR and exact commit supplied in the handoff. Confirm access to Platform_Strategy_Updated.pdf using its 24-page count/checksum, and identify the accepted EA baseline reviewed. The repository Markdown/JSON is draft 3; DOCX/PPTX are explicitly retained draft-2 snapshots.
+Please review the PR and exact commit supplied in the handoff. Confirm access to Platform_Strategy_Updated.pdf using its 24-page count/checksum, and identify the accepted EA baseline reviewed. The repository Markdown/JSON is now author revision 1 responding to PP-EA-2026-10-06-v2; DOCX/PPTX are explicitly retained revision-2 snapshots. This is a local review brief only; the coordinator owns routing the exact new commit for review-v3. See author-revision-1.md for all twelve dispositions and changed evidence.
 
 ## Requested scope
 

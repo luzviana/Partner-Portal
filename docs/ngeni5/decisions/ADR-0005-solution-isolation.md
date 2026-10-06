@@ -2,8 +2,8 @@
 
 - Status: **Proposed**, except the explicit review gate which applies immediately.
 - Date: 2026-10-06
-- Owner: Partner-Portal proposal author; accountable business/technical owners to be confirmed.
-- EA review: pending, no approval recorded.
+- Accountable roles: Product + Security + EA + solution data owners; named acceptance pending.
+- EA v2: changes required against a60a88d; author revision awaits exact-commit v3; no approval recorded.
 - User implementation approval: pending, no approval recorded.
 
 ## Context
@@ -25,3 +25,9 @@ Threat model, residence/retention, backup/keys, queues/indexes, operations and e
 ## Consequences and current disposition
 
 Proposed; no isolation exception granted. The proposal must account for operating cost, security/isolation, compatibility and rollback before adoption. Relevant findings belong in [review status](../reviews/status.md), and revisions must be reviewed against their exact commit. No accepted implementation decision is inferred from a draft document or a merged documentation PR.
+
+## Author revision 1 response
+
+Recommend corporate navigation/public catalog plus isolated solution/environment state. Explicit partner/customer/solution/workspace authorities, placement and three-axis restore/support tests apply. Select topology before R09 or sensitive SaaS import; RLS/schema/vendor organization IDs alone prove neither restore nor failure isolation. No exception is granted.
+
+Incorporated design: [authority-and-lifecycle.md](../authority-and-lifecycle.md). Decision gate: OD-01/07 in [open decisions](open-decisions.md). Acceptance mapping and evidence are in the [finding register](../reviews/author-revision-1.md).

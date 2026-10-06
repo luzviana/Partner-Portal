@@ -9,9 +9,13 @@
       "owner": "Product",
       "days": 2,
       "deps": [],
-      "acceptance": "Name two partners, country, currency and portfolio. Define standalone and portal acceptance for all five services. Confirm Marketplace as the first pilot entry point.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Record proposed pilot partners/users, customer/solution/environment/workspace mapping, country/currency/catalog and synthetic versus real-data scope; none is assumed accepted. Define three-axis access fixtures and native/portal outcomes. Identify Product, Security, solution and operating owners; OD-01/07 acceptance is required before affected use.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work"
+      ]
     },
     {
       "id": "R02",
@@ -23,8 +27,12 @@
         "R01"
       ],
       "acceptance": "Record actual account count, subscription, app model, API version, scopes and relevant objects. Identify an approved test environment and gaps without changing production data.",
-      "source": "S17-S18",
-      "priority": "High"
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work"
+      ]
     },
     {
       "id": "R03",
@@ -35,22 +43,30 @@
       "deps": [
         "R02"
       ],
-      "acceptance": "Map company/contact/deal fields, partner visibility, source IDs and outbound quote fields. Approve conflict, deletion and outage rules. No field has two uncontrolled writers.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Document one writer per CRM field and account-scoped mappings, application-owned CRM visibility grants, explicit partner/customer/solution collaboration and conflict/deletion/outage policy. Complete record-class lifecycle owners/regions and numeric revocation/cache/export/backup/audit bounds; unknowns block real-data use. Define CRM correlation, retry/uncertainty/operator bounds before R16/R18.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work"
+      ]
     },
     {
       "id": "R04",
       "phase": "P0",
-      "title": "[Partner-Portal] Choose product pricing and quote authorities",
+      "title": "[Partner-Portal] Compare product pricing and quote authorities",
       "owner": "Commercial",
       "days": 3,
       "deps": [
         "R02"
       ],
-      "acceptance": "Compare HubSpot, existing catalog/ERP and custom or OSS options on 10 golden quote cases. Record D01/D02, costs, entitlement gaps and one authoritative calculator.",
-      "source": "S9, S18",
-      "priority": "High"
+      "acceptance": "Compare Medusa/CloudBlue/thin custom for catalog and HubSpot/QuoteWerks/conditional ERPNext/custom for quotes using solution-analysis.md evidence register and ten owner-supplied expected cases. Record field/quote authority candidates, native edit-bypass feasibility, rights gaps and low/base/high TCO inputs. This is a comparison, not selection: unknown hard gates block OD-02/03 and R08 selection.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work"
+      ]
     },
     {
       "id": "R05",
@@ -63,9 +79,13 @@
         "R03",
         "R04"
       ],
-      "acceptance": "Version schema for tenant, workspace, source revision, sites, products, quantities and provenance. Validate examples from all five services, including an unmapped product.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Review versioned package envelope with partner/customer/solution/environment/service-workspace identity, trusted scope binding, configuration digest/rule version, provenance and lifecycle references. Define schemas, limits, errors, supported versions, idempotency/replay and first-consumer compatibility checklist. Compare module/adapter/service and durable package custodian for OD-09. Unknown policy values or provider ownership block affected implementation; follow-on schema work is sized separately.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work"
+      ]
     },
     {
       "id": "R06",
@@ -77,9 +97,13 @@
         "R01",
         "R03"
       ],
-      "acceptance": "Define direct-service and portal login, service identity, CRM record grants and data regions. Document two-tenant access cases and vendor SSO dependencies.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Obtain SSO/application owner acceptance of direct login and local grants, application audience/issuer/subject/organization/time checks, vendor federation and revocation/logout bounds. Define authenticated-without-membership, wrong-audience, revoked-grant and three-axis customer/solution tests, including support/restore. Complete owner-accepted ICR before registration; portal tokens confer no blanket vendor authority.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work"
+      ]
     },
     {
       "id": "R07",
@@ -91,9 +115,13 @@
         "R05",
         "R06"
       ],
-      "acceptance": "Record build/buy candidate and standalone/handoff fit for each service. Check API/export and licensing evidence or mark it unknown. Produce small follow-on tasks for gaps.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "For each candidate record documented/demonstrated/contractually confirmed/unknown/failed evidence for rights, standalone SSO, isolation/restore/support, API/export fidelity, lifecycle/region and operator. Include EA compared alternatives and manual fallback lost fields/labor/outcome. Unknown or failed hard gates prohibit selection/use; scope any exclusion for explicit Product approval. Produce small proof tasks for outstanding evidence; no false completion of a vendor proof in this timebox.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work"
+      ]
     },
     {
       "id": "R08",
@@ -102,12 +130,19 @@
       "owner": "Delivery lead",
       "days": 2,
       "deps": [
+        "R03",
         "R04",
+        "R05",
+        "R06",
         "R07"
       ],
-      "acceptance": "Obtain 20 entitled offers and 10 expected-price cases from named stewards. Re-estimate the pilot, staffing and unresolved vendor work. Record the P0 go/no-go decision.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Record selected or explicitly excluded capabilities only after R04/R07 hard-gate evidence and owner acceptance. Unknowns block affected work, not silently waive it. Obtain entitled offers and expected commercial cases; record OD-01 through OD-09 as applicable, scoped threat model and first-exposure plan/operators. Reconcile seed versus program work breakdown, stewardship, staffing, vendor lead times, operations and TCO. EA/user/affected-owner/Security approvals remain separate from this baseline.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work"
+      ]
     },
     {
       "id": "R09",
@@ -119,8 +154,13 @@
         "R08"
       ],
       "acceptance": "Create a reusable service template with separate identity, state credentials, health endpoint and release pipeline. Deploy two empty services and update one without redeploying the other.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
+      ]
     },
     {
       "id": "R10",
@@ -132,23 +172,33 @@
         "R06",
         "R09"
       ],
-      "acceptance": "Display entitled service links and active workspace context. Label unavailable services honestly. One service failure does not prevent navigation to available services.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Display navigation projected from service-owned grants and checked workspace context; never administer universal access. One unavailable service does not block other links; direct service login works without portal. Identity self-service gains no launcher.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
+      ]
     },
     {
       "id": "R11",
       "phase": "P1",
-      "title": "[Partner-Portal] Prove tenant authorization in two services",
+      "title": "[Partner-Portal] Prove customer and solution authorization",
       "owner": "Engineering",
       "days": 3,
       "deps": [
         "R06",
         "R09"
       ],
-      "acceptance": "Implement verified actor/tenant/resource checks in two pilot APIs. Direct URLs and forged tenant IDs cannot expose another partner. Portal access and native access use the same policy.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Prove local actor/action/resource grants in two pilot services using different partners, same partner/different customers or solutions, and same customer/different grants. Deny forged scope/CRM mapping, wrong audience and authenticated users without membership. Exercise revoked cached grants, direct URLs/files/jobs and unauthorized support. Record approved revocation bounds and restore-case evidence for first exposure.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
+      ]
     },
     {
       "id": "R12",
@@ -162,8 +212,14 @@
         "R11"
       ],
       "acceptance": "Publish 20 versioned offers with product/vendor IDs, eligibility and price references. Both list and ID lookup enforce grants. Revoke an offer and invalidate a sample consumer.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
+        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
+      ]
     },
     {
       "id": "R13",
@@ -176,8 +232,14 @@
         "R12"
       ],
       "acceptance": "Pass the 10 approved NRC/MRC cases with decimal arithmetic, term, currency, version and expiry. If a vendor is master, use its supported result through the facade rather than a second calculator.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
+        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
+      ]
     },
     {
       "id": "R14",
@@ -190,8 +252,14 @@
         "R13"
       ],
       "acceptance": "A user opens Marketplace without the portal, browses entitled offers and exports a selection. The portal launches the same service with authorized context. Persist source revision.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
+        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
+      ]
     },
     {
       "id": "R15",
@@ -201,12 +269,19 @@
       "days": 3,
       "deps": [
         "R05",
+        "R08",
         "R09",
         "R11"
       ],
-      "acceptance": "Exchange API stores a validated package and hash. Reject schema/tenant errors and unresolved product mappings. Repeating a submission ID returns the same package.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "After OD-09 selection, the named package provider records immutable accepted package/digest and receipt through the selected module/adapter/service contract. Reject scope/schema/mapping errors and deduplicate scoped command IDs. Prove first-consumer versions/limits, authorized evidence links, tombstone/redaction/hold policy, bounded exports, revocation during replay and isolated restore; no indefinite personal-data retention.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
+        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
+      ]
     },
     {
       "id": "R16",
@@ -217,12 +292,19 @@
       "deps": [
         "R02",
         "R03",
+        "R08",
         "R09",
         "R11"
       ],
       "acceptance": "Using the approved test environment, import a company/contact/deal association with account-scoped IDs. Service consumers see only granted CRM records and a freshness timestamp.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
+        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
+      ]
     },
     {
       "id": "R17",
@@ -233,9 +315,15 @@
       "deps": [
         "R16"
       ],
-      "acceptance": "Verify supported notification authenticity, deduplicate and re-read canonical state. Simulate missed and reordered changes; reconciliation restores the correct projection.",
-      "source": "S17",
-      "priority": "High"
+      "acceptance": "Verify notification authenticity, deduplicate and reread source state; test missed/reordered events, grant/token revocation, rate limits and deletion. Projection freshness is visible and stale authorization fails closed; deletion does not trigger recreate. Follow quote-and-crm-controls.md state and lifecycle rules.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
+        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
+      ]
     },
     {
       "id": "R18",
@@ -247,9 +335,15 @@
         "R03",
         "R16"
       ],
-      "acceptance": "Implement an outbound command ledger in the test environment. A timeout after remote success does not create duplicates. Readback verifies mapped quote fields and controlled proposal link.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Implement durable account/object/entity-revision command ledger and mapping through Prepared/InFlight/Uncertain/Verifying/NeedsOperator/terminal states. Timeout after success with delayed visibility never causes blind duplicate create. Prove bounded retries, uncertainty deadline/escalation, safe operator decision, unique readback and field ownership; absent search is not proof of no commit.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
+        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
+      ]
     },
     {
       "id": "R19",
@@ -258,12 +352,19 @@
       "owner": "Engineering",
       "days": 2,
       "deps": [
+        "R04",
+        "R07",
         "R08",
         "R15"
       ],
-      "acceptance": "Reject insufficient ports, 500 W load on a 370 W budget and a missing license. Persist rule version and findings with each package. Passing examples retain provenance.",
-      "source": "S1 p. 16",
-      "priority": "High"
+      "acceptance": "Specify canonical technical configuration digest and rule-set version. Test ports, 500 W versus 370 W, required license and valid 20-AP fixtures; classify price-only versus technical changes with Commercial/technical owners. Unsupported rule families are blocked or expressly excluded per source coverage. Persist exact digest, findings and validity; executed evidence is a future gate.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
+      ]
     },
     {
       "id": "R20",
@@ -272,13 +373,19 @@
       "owner": "Engineering",
       "days": 3,
       "deps": [
+        "R08",
         "R13",
         "R15",
         "R19"
       ],
-      "acceptance": "Bind an exchange revision to exact catalog, rules and price evidence. Reject expired price responses. One command ID produces one quote; later catalog changes leave it unchanged.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Bind quote revision to package/configuration digest, technical rule version, exact catalog and price evidence, currency/NRC/MRC/term and expiry. One scoped command produces one snapshot. Preserve lawful history under selected retention/redaction/hold policy. Native technical edits create a new draft and invalidate matching proof; no platform selected without supported enforcement.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
+      ]
     },
     {
       "id": "R21",
@@ -289,9 +396,14 @@
       "deps": [
         "R20"
       ],
-      "acceptance": "Only the authorized approver can approve the exact quote version. A material revision requires new approval. Missing CRM linkage blocks issue under the proposed pilot policy.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Enforce Draft/TechnicallyValid/Priced/Approved/Issued transition authorities in quote-and-crm-controls.md. Native 20-AP edit removing switch/license must prevent native and integrated approval/issue until new digest validates. Price-only edits require reprice/reapproval; unknown changes revalidate technically. Expiry during approval blocks issue. Buyer acceptance/deal-won/order are separate; selected CRM-link policy enforced.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
+      ]
     },
     {
       "id": "R22",
@@ -304,9 +416,15 @@
         "R15",
         "R20"
       ],
-      "acceptance": "An outbox survives service restart. Consumers deduplicate repeated package/quote events. Failed messages expose retry and operator state with end-to-end trace IDs.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Durable outbox and deduplicating consumers survive restart. Before first consumer, publish provider-owned event schemas, supported versions, ordering/idempotency/retry limits, solution-bound replay and dead-letter lifecycle; demonstrate compatibility/rollback and operator handling. Audit uses redacted operational envelope, not unrestricted domain payload.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
+        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
+      ]
     },
     {
       "id": "R23",
@@ -318,9 +436,14 @@
         "R21",
         "R22"
       ],
-      "acceptance": "An isolated worker renders an approved fixture, verifies totals and hides internal cost. Inputs are validated, object access is scoped and retry creates no conflicting final version.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Render only exact approved configuration/commercial digests, hide internal cost and validate totals. Quarantine/bound input, files, worker resources and egress before use. Recheck expiry/grants/technical evidence at issue, including native CPQ edits while rendering; revoke downloads within policy bounds and expire exports. Repeated jobs cannot issue conflicting revisions.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
+      ]
     },
     {
       "id": "R24",
@@ -334,9 +457,14 @@
         "R18",
         "R23"
       ],
-      "acceptance": "Marketplace selection reaches exchange and approved proposal, then verified HubSpot summary. Induce CRM outage and show pending sync without changing quote totals.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Demonstrate Marketplace/package/quote/proposal/CRM journey. Include native switching/license removal, price-only change, expiry during approval/render and timeout-after-success with delayed CRM visibility. No invalid quote issue or duplicate create; Pending CRM sync stays visible without altered totals. Apply selected outage policy and retain exact evidence versions.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
+      ]
     },
     {
       "id": "R25",
@@ -347,9 +475,13 @@
       "deps": [
         "R24"
       ],
-      "acceptance": "Portal outage leaves native Marketplace access working. Test shared-data outage, forged context and cross-tenant file/API attempts. Expected denials and degraded status are explicit.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Portal outage preserves native access; shared-data/vendor outage reports accurate degradation. Exercise all three authority axes across API/files/jobs/AI/export surfaces in pilot scope, with forged context, revoked grants and unauthorized support. Include deletion/replay/restore denial cases, not just different partner IDs.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work"
+      ]
     },
     {
       "id": "R26",
@@ -360,9 +492,14 @@
       "deps": [
         "R25"
       ],
-      "acceptance": "Restore pilot authoritative stores, verify references and reconcile HubSpot projection. Measure agreed targets. Product owner records pilot acceptance or precise blocking defects.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Accept only scoped pilot with each earlier first-exposure SYN/REAL checklist already satisfied, named accountable operators and applicable approvals. Prove isolated restore, revocation/tombstone replay, support denial, credential rotation and audit redaction; reconcile HubSpot and journey reliability. Product records acceptance or blocked capabilities; unknown controls/data policies cannot pass on functional success.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
+      ]
     },
     {
       "id": "R27",
@@ -372,13 +509,19 @@
       "days": 2,
       "deps": [
         "R07",
+        "R08",
         "R09",
         "R11",
         "R26"
       ],
-      "acceptance": "Configure selected solution or custom service with native access and separate state. Upload and calibrate one approved floor-plan file; identity and tenant boundaries pass.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Before any selected planner configuration/upload, R07/R08 must hold passing rights/SSO/isolation/region/export evidence for this capability, plus SYN/REAL checklist. Demonstrate independent access and calibrated approved file, upload/egress containment and separate state/recovery. Unknown Hamina/incumbent rights block use; a synthetic custom geometry slice does not claim RF or non-Wi-Fi simulation.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
+      ]
     },
     {
       "id": "R28",
@@ -390,9 +533,15 @@
         "R15",
         "R27"
       ],
-      "acceptance": "Map placed devices to canonical products and export source revision/geometry references. Review the BOM diff. Do not label unvalidated placement as RF coverage.",
-      "source": "S1 pp. 6-7",
-      "priority": "High"
+      "acceptance": "Map canonical devices, source revision and geometry references through a supported contract and consumer compatibility proof. Enumerate lost export fields (including unavailable power/port/geometry facts), manual enrichment and labor. Missing evidence blocks applicable technical validation; successful import is not RF accuracy or full round-trip proof.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
+        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
+      ]
     },
     {
       "id": "R29",
@@ -402,13 +551,19 @@
       "days": 3,
       "deps": [
         "R07",
+        "R08",
         "R09",
         "R11",
         "R26"
       ],
-      "acceptance": "A user imports one supported inventory file without the portal. Persist observation time/source and device identity. Repeated imports do not duplicate the same observation batch.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Launch only approved file-import assessment with first-use checklist and isolated observation store. Persist source/time/device and deduplicate batches; validate malicious/oversized files. Observations are not authoritative inventory or iTop replacement. NetBox requires OD-10; no active scan is authorized by this item.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
+      ]
     },
     {
       "id": "R30",
@@ -420,9 +575,14 @@
         "R15",
         "R29"
       ],
-      "acceptance": "Review KEEP/REUSE/UPGRADE/REPLACE/ADD and export a versioned package. Only confirmed reuse reduces net-new quantities. Retain observation provenance.",
-      "source": "S1 pp. 8-9",
-      "priority": "High"
+      "acceptance": "Review KEEP/REUSE/UPGRADE/REPLACE/ADD and export versioned provenance. Only confirmed technically acceptable reuse reduces new quantities; unknown devices remain unresolved. Define observation expiry and source-owned references; no new detailed CMDB authority.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
+      ]
     },
     {
       "id": "R31",
@@ -431,13 +591,19 @@
       "owner": "Engineering",
       "days": 3,
       "deps": [
+        "R08",
         "R09",
         "R11",
         "R26"
       ],
-      "acceptance": "Create a standalone workspace and stage a 60-site CSV. Show row errors and confirm before save. Optional CRM references preserve grants and do not force immediate CRM creation.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Apply service-specific first-use/isolation/restore gates before staging a 60-site file in a standalone workspace bound to one solution/environment. Show row errors and confirmation; prove same-partner/different-customer separation. Optional CRM references do not grant access or cause immediate create.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
+      ]
     },
     {
       "id": "R32",
@@ -449,8 +615,13 @@
         "R31"
       ],
       "acceptance": "Apply a profile revision to 40 sites and one local override. Preview later changes and preserve source revisions. A repeated application creates no duplicate quantities.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
+      ]
     },
     {
       "id": "R33",
@@ -463,8 +634,14 @@
         "R32"
       ],
       "acceptance": "Expanded BOM equals per-site totals. Source sites/profile revisions and overrides remain traceable. Existing issued quotes do not change after a new site revision.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
+        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
+      ]
     },
     {
       "id": "R34",
@@ -473,12 +650,19 @@
       "owner": "Catalog steward",
       "days": 2,
       "deps": [
+        "R03",
         "R12",
         "R26"
       ],
-      "acceptance": "Publish approved specifications and battle cards with owner, version, entitlement and expiry. Revocation propagates to retrieval and cached snippets.",
-      "source": "S1 pp. 10-15, 24",
-      "priority": "High"
+      "acceptance": "Publish governed specifications/battle cards with owner, rights, class, version, region and expiry. Source/grant revocation invalidates retrieval, chunks, caches and queued jobs within approved bounds; stale authority fails closed. AI content publication is not the deferred human comparison/resources experience.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
+        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
+      ]
     },
     {
       "id": "R35",
@@ -487,13 +671,21 @@
       "owner": "Engineering",
       "days": 3,
       "deps": [
+        "R07",
+        "R08",
         "R09",
         "R11",
         "R34"
       ],
-      "acceptance": "AI service has its own endpoint, conversations and retrieval store. Direct native use and portal launch respect the same tenant grants. Add cancellation and per-tenant usage budgets.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "First-use AI checklist verifies provider/model rights/region/retention, protected endpoint and URL/egress controls, scoped conversations/indexes, direct login/local grants, cancellation and budgets. Prove all three authority axes, revocation during retrieval and source deletion/restore behavior before real-data exposure.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
+        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
+      ]
     },
     {
       "id": "R36",
@@ -506,8 +698,13 @@
         "R35"
       ],
       "acceptance": "Typed tool produces a proposed package/diff for user review. Receiving service reauthorizes and validates. AI has no table-write, approval, proposal-send or order capability.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
+      ]
     },
     {
       "id": "R37",
@@ -519,8 +716,13 @@
         "R36"
       ],
       "acceptance": "Run 50 grounded cases plus malicious retrieval and cross-tenant attempts. Report quality and cost. Disable AI and prove Marketplace/manual quoting still works.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
+      ]
     },
     {
       "id": "R38",
@@ -534,9 +736,15 @@
         "R33",
         "R37"
       ],
-      "acceptance": "Portal launches all five services with checked context and shows package handoff status. A bad vendor token or unavailable service gives a contained error and recovery path.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Before each portal consumer uses a provider contract, prove version/limits/error/rollback compatibility and context/grant validation. Portal composes service visibility without authority; native access survives portal failure. Contain unavailable vendor/bad token and make handoff status truthful.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
+        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
+      ]
     },
     {
       "id": "R39",
@@ -547,23 +755,33 @@
       "deps": [
         "R38"
       ],
-      "acceptance": "Demonstrate native access, own state/release boundary and common quote handoff for every service. Deploy one custom service without changing others; document vendor equivalents.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Demonstrate five independent thin workflows only for expressly included capabilities, each with native access/state/release ownership, first-use checklist and supported package contract. Release one without changing others; record vendor equivalents and source-coverage exclusions. This does not accept deferred RF/non-Wi-Fi/rule/lifecycle breadth.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
+      ]
     },
     {
       "id": "R40",
       "phase": "P3",
-      "title": "[Partner-Portal] Prove specialist RF integration rights",
+      "title": "[Partner-Portal] Expand specialist RF accuracy and fidelity proof",
       "owner": "Solutions lead",
       "days": 3,
       "deps": [
         "R28",
         "R39"
       ],
-      "acceptance": "Test a licensed RF candidate with one floor-plan fixture. Record API/export/SSO rights, fidelity, accuracy evidence and remaining work. Unsupported scope gets explicit follow-on items.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Expand RF accuracy/fidelity proof only for a candidate with selection rights/SSO/isolation/export gates passed before its first use. Test approved fixture and document remaining work; this later item cannot authorize earlier R27/R28 use. Non-Wi-Fi functions need their own scope/evidence before claims.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
+      ]
     },
     {
       "id": "R41",
@@ -572,12 +790,19 @@
       "owner": "Security",
       "days": 2,
       "deps": [
+        "R07",
+        "R08",
         "R30",
         "R39"
       ],
-      "acceptance": "Approve customer/lab scope, protocols, local secrets, outbound identity and kill switch. Verify chosen scanner rights before any active scan.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Before any active scan, reconfirm selected scanner rights and approve exact customer/lab targets, protocols, local secrets, identity, egress/kill switch, operator and SYN/REAL checklist. R07/R08 selection evidence precedes configuration; late approval does not legalize prior scans.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
+      ]
     },
     {
       "id": "R42",
@@ -588,9 +813,14 @@
       "deps": [
         "R41"
       ],
-      "acceptance": "In the authorized lab or vendor sandbox, ingest one observation batch, preserve mapping and retry safely. Produce follow-on items for additional devices/protocols.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Only after R41, ingest one authorized lab/vendor collector batch with source mapping, bounded retry and observation expiry; test disconnected/duplicate recovery and scoped credential handling. Record known/unknown device coverage and follow-on scope; no universal discovery claim.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
+      ]
     },
     {
       "id": "R43",
@@ -599,13 +829,20 @@
       "owner": "Engineering",
       "days": 3,
       "deps": [
+        "R03",
         "R17",
         "R18",
         "R39"
       ],
-      "acceptance": "Show authorized CRM records with package/quote links and one supported lifecycle feed. Source/freshness is visible. No second editable CRM master is created.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "After OD-10, compose authorized HubSpot context, source-owned package/quote links and one explicitly selected lifecycle feed with freshness. No second CRM or detailed inventory/ticket/topology replica; preserve iTop and use owner ICR if affected. First-use checklist and grant/source revocation apply; broader lifecycle remains excluded pending approval.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
+        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
+      ]
     },
     {
       "id": "R44",
@@ -614,13 +851,20 @@
       "owner": "Engineering",
       "days": 3,
       "deps": [
+        "R03",
         "R22",
         "R39",
         "R43"
       ],
-      "acceptance": "Replay service events and CRM snapshots into a separate tenant-filtered read model. Reconcile quote version counts and values without counting revisions as new revenue.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Create only approved minimized solution-scoped reporting projection. Reconcile version counts/values without revision double counting. Apply three-axis grants, selected retention/region, source tombstones, cache/export expiry and restore replay; no central detailed customer data lake. CON and REAL/SYN proof precede first use.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
+        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
+      ]
     },
     {
       "id": "R45",
@@ -631,9 +875,15 @@
       "deps": [
         "R44"
       ],
-      "acceptance": "One approved report exports to PDF, Excel, CSV and PPT with correct filters and timestamp. Test tenant isolation. Record vendor/API gaps and more small tasks.",
-      "source": "S1 pp. 22-23",
-      "priority": "High"
+      "acceptance": "Prove one approved report in PDF/Excel/CSV/PPT with filters/as-of and genuine format fidelity. Test all three authority axes including cached/scheduled/export/service-principal paths, download revocation and expiry; document unavoidable downloaded-copy limits. Remaining strategy reports require separate scope/funding.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required",
+        "CON checklist and provider/consumer compatibility evidence before first use; R46 cannot substitute"
+      ]
     },
     {
       "id": "R46",
@@ -646,9 +896,14 @@
         "R42",
         "R45"
       ],
-      "acceptance": "A previous supported package version still imports. Export one solution's state and canonical references for exit/recovery. Record vendor lock-in gaps and migration ownership.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Expand prior first-use compatibility tests into vendor exit/recovery: supported previous versions, solution state/canonical references, lost fields, deletion/backup expiry, legal holds and revoked grants after export/restore. Record migration owner and gaps; this is not the first consumer contract proof.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
+      ]
     },
     {
       "id": "R47",
@@ -659,9 +914,14 @@
       "deps": [
         "R46"
       ],
-      "acceptance": "Run cross-service tenant tests, credential rotation and restore/reconciliation drills. Resolve critical findings or record accountable risk decisions before release.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Regress earlier service launch controls across all approved scope: three-axis isolation, support elevation denial, credentials, bounded revocation, lifecycle purge, immutable redaction and backup/restore reconciliation. Record independent Security decisions for material exceptions; none are preapproved. Do not defer initial controls to this item.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
+      ]
     },
     {
       "id": "R48",
@@ -672,9 +932,14 @@
       "deps": [
         "R47"
       ],
-      "acceptance": "Each service has a named operating owner, SLO evidence, runbook and supported scope. Measure cost and accept release gates or list blocked capabilities.",
-      "source": "S2 and architecture revision 2",
-      "priority": "High"
+      "acceptance": "Reconcile actual supported scope, staffing/TCO, vendor/manual-handoff costs, named operators/on-call, journey SLIs and recovery evidence with funded baseline. Each vendor outage counts in journey measurement. Accept precise release scope or keep unresolved capabilities blocked; no assumption-based schedule or SLO claim.",
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "High",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work",
+        "Service-specific vendor/authority/policy decisions and SYN or REAL checklist in release-and-operations.md before first exposure; named operators required"
+      ]
     },
     {
       "id": "R49",
@@ -686,8 +951,12 @@
         "R48"
       ],
       "acceptance": "Specify ERP/order master, idempotency, tax and subscription handoff. Produce a funded, small-item backlog before committing implementation.",
-      "source": "S2 and architecture revision 2",
-      "priority": "Medium"
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "Medium",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work"
+      ]
     },
     {
       "id": "R50",
@@ -699,8 +968,14 @@
         "R48"
       ],
       "acceptance": "Keep the five independent business boundaries. Use measured load and team ownership to decide whether any shared/internal component needs further separation.",
-      "source": "S2 and architecture revision 2",
-      "priority": "Medium"
+      "source": "Platform_Strategy_Updated.pdf and user brief; EA v2; source-evidence.md",
+      "priority": "Medium",
+      "estimate_status": "historical_timebox_reestimate_required",
+      "gates": [
+        "Exact-revision EA re-review, explicit user scope approval, and applicable affected-owner/Security acceptance before consequential work"
+      ]
     }
-  ]
+  ],
+  "revision": "author-revision-1_against_PP-EA-2026-10-06-v2",
+  "estimate_note": "133 historical seed person-days; revised acceptance not re-estimated; not a program or calendar commitment"
 }

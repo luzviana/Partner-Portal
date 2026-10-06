@@ -1,6 +1,6 @@
 # EA governance reconciliation draft
 
-These corrections were made during preparation, before formal EA review. They are not EA findings or approvals.
+The table preserves pre-review draft-3 corrections as history, not approvals. Current author revision 1 incorporates EA v2 through the [finding register](reviews/author-revision-1.md), [authority/lifecycle model](authority-and-lifecycle.md) and [first-use gates](release-and-operations.md). These current documents and the rewritten proposal supersede any less-specific earlier wording. No exception or approval is inferred.
 
 | Topic | Revision-2 gap | Draft-3 position | Required EA disposition |
 | --- | --- | --- | --- |
