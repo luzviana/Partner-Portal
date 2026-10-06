@@ -17,9 +17,13 @@ The portal integrates five independent services, potentially supplied by differe
 9. [Authority and lifecycle](authority-and-lifecycle.md), [quote/CRM controls](quote-and-crm-controls.md) and [first-use/operations gates](release-and-operations.md)
 10. [Backlog](backlog.md) and [machine-readable records](backlog.json)
 
+## Current CTO presentation
+
+[Review draft 3](cto-presentation.md) provides an editable PowerPoint and PDF based on canonical commit `abfaf501324deaefdf3c747b2d085544e37bb21c`, including the requested option comparisons. It remains a discussion draft pending review and approval.
+
 ## Source of truth
 
-Markdown and JSON in this directory are the reviewable repository sources. The files under `output/ngeni5` are retained revision-2 Word/PowerPoint snapshots previously delivered to the CTO. They predate the EA reconciliation in author revision 1 and must not be treated as the latest or approved baseline. After review findings are reconciled, regenerate presentation artifacts from the agreed repository content before requesting user approval.
+Markdown and JSON in this directory are the reviewable repository sources. The original Architecture Proposal and Implementation Backlog DOCX files and `NGENI-5_CTO_Presentation.pptx` under `output/ngeni5` are retained revision-2 snapshots. The separately named `NGENI-5_CTO_Review_rev3` PPTX/PDF files are the current presentation draft. They predate the EA reconciliation in author revision 1 and must not be treated as the latest or approved baseline. After review findings are reconciled, regenerate presentation artifacts from the agreed repository content before requesting user approval.
 
 The strategy PDF is intentionally not published in this public repository. Its verified checksum and authorized reviewer access are recorded in source-evidence.md. User clarification of independent services and HubSpot usage is authoritative.
 
