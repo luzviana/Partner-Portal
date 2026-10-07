@@ -13,8 +13,8 @@ Supporting controls: [boundaries](service-boundaries.md), [contracts](contracts.
 
 ## Historical artifacts and review evidence
 
-The revision-2 Word/PowerPoint files and revision-3 CTO PPTX/PDF under output/ngeni5 predate this new user scope. They are historical, not current approval targets. [Revision-3 slide transcript](cto-presentation.md) remains intact with a superseded notice. Current CTO content is decision-brief.md; exported slides need refresh to this scope before use.
+The revision-2 Word/PowerPoint files and revision-3 CTO PPTX/PDF under output/ngeni5 predate this new user scope. They are historical, not current approval targets. [Revision-3 slide transcript](cto-presentation.md) remains intact with a superseded notice. Current review target: [revision-4 presentation and transcript](cto-presentation-rev4.md). EA review and user approval remain pending.
 
-The [author revision 1 dispositions](reviews/author-revision-1.md) and prior EA report references remain exact historical evidence, not approvals of revision 2. [Scope change record](reviews/scope-revision-2.md) identifies what must be re-reviewed. Coordinator owns review routing; no author messages were sent.
+The [author revision 1 dispositions](reviews/author-revision-1.md) and prior EA report references remain exact historical evidence, not approvals of revision 2. [Scope change record](reviews/scope-revision-2.md) identifies what must be re-reviewed. Coordinator owns review routing; see the [revision-4 review brief](reviews/presentation-rev4-request.md).
 
 User clarification takes precedence over earlier five-service topology and old phase sequencing. Runtime selection, HubSpot rights, data policy values and named acceptance remain unresolved. No application code/configuration, account changes, deployment, procurement, merge or task mutation is authorized. The source PDF is unchanged and is not republished in this public repository.

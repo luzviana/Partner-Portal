@@ -1,6 +1,6 @@
 # CTO decision brief — HubSpot-first revision
 
-The latest reviewed feature list changes the product shape and delivery order. This is the current narrative; exported revision-2 and revision-3 decks predate it and are historical. Implementation remains gated by EA review of this revision and explicit user/affected-owner/Security approvals.
+The latest reviewed feature list changes the product shape and delivery order. The [revision-4 deck](cto-presentation-rev4.md) presents this current narrative; exported revision-2 and revision-3 decks predate it and are historical. Implementation remains gated by EA review of this revision and explicit user/affected-owner/Security approvals.
 
 ## 1. HubSpot integration is the first investment
 
