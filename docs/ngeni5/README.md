@@ -1,5 +1,7 @@
 # NGENI-5 current planning package
 
+Current detailed design: [P1–P3 integration architecture and comparison](integration-architecture-p1-p3.md), covering runtime boundaries, data flows, alternatives, cost inputs and evidence gates. This extends the revision-4 deck and still requires exact-revision EA review.
+
 **Author revision 2: latest reviewed HubSpot-first scope. Documentation only. Revised-scope EA review and implementation approval pending.**
 
 Start with [priority plan](priority-plan.md), [proposal](proposal.md), [CTO narrative](decision-brief.md), [solution comparison](solution-analysis.md) and [backlog](backlog.md) / [JSON](backlog.json).

@@ -1,5 +1,7 @@
 # Proposed API and event contract inventory
 
+[Detailed P1–P3 flows](integration-architecture-p1-p3.md) specify read composition, synchronization, Resources access, proposal reconciliation and typed agent tools. Proposed operation names are conceptual; schemas and numeric limits remain first-use gates.
+
 **Scope revision:** [Latest reviewed priority plan](priority-plan.md) supersedes earlier five-service and P0–P3 sequencing. HubSpot integration is Priority 1, proposal-only Marketplace Priority 2, cross-page AI Sales Support Priority 3. Site Designer/multisite and Discovery are Priority 4, not initialized. The controls below remain applicable to relevant capabilities, not authority to launch deferred work.
 **Design inventory only. No API implementation or approved endpoint is introduced.** Search existing domain contracts before defining new operations. User, workload and deployment authority must derive from verified identity and trusted configuration, not caller-selected tenant or CRM IDs.
 

@@ -1,5 +1,7 @@
 # Revised portal and capability boundaries
 
+[P1–P3 detailed architecture](integration-architecture-p1-p3.md) now proposes deployment boundaries: portal/integration backend, durable worker and separately isolated AI runtime. These refine the assessment below; none is approved for implementation.
+
 Author revision 2. User-approved feature priority is distinct from implementation approval. [Priority plan](priority-plan.md) supersedes the earlier mandatory five-service topology. These are proposed ownership boundaries, not a commitment to a runtime per row.
 
 | Surface/capability | Owner and state | Integration and deployment assessment |

@@ -1,5 +1,7 @@
 # CTO decision brief — HubSpot-first revision
 
+The [P1–P3 integration comparison](integration-architecture-p1-p3.md) is the current technical companion: reuse HubSpot, own a typed integration layer, retain one product/price authority and isolate agent execution. Prove native quotes against private access and no-payment requirements before selecting them. Revision-4 slides do not include this deeper analysis.
+
 The latest reviewed feature list changes the product shape and delivery order. The [revision-4 deck](cto-presentation-rev4.md) presents this current narrative; exported revision-2 and revision-3 decks predate it and are historical. Implementation remains gated by EA review of this revision and explicit user/affected-owner/Security approvals.
 
 ## 1. HubSpot integration is the first investment

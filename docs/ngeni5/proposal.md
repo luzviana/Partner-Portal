@@ -1,5 +1,7 @@
 # Partner Portal enterprise architecture proposal
 
+Detailed proposed integration design and cost comparison: [P1–P3 architecture](integration-architecture-p1-p3.md). It recommends a modular portal/integration backend, durable worker and isolated AI runtime, subject to EA and operating-owner acceptance; catalog and proposal functions do not automatically require separate services.
+
 **Author revision 2: HubSpot-first scope. Planning only; implementation approval pending.** The latest reviewed user list supersedes the five-entry-point model. [Priority plan](priority-plan.md) is the authoritative scope and sequence. Existing EA reports cover earlier commits, not this boundary change.
 
 ## User experience and priorities

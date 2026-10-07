@@ -17,4 +17,6 @@ Allowed now: repository documentation, research synthesis, backlog refinement an
 
 Silence, elapsed time, passing checks, agent completion, documentation merge and EA recommendation are not user approval. Design closure never substitutes for future runtime evidence. Record exact scope/revision and approval references before implementation. Missing policy/owner/vendor inputs remain gated in [OD-01–OD-10](../decisions/open-decisions.md).
 
-The confirmed 30-day proposal requirement and Priority 4 deferral are user scope decisions, not implementation authorization. Current exported decks are historical; current CTO narrative is decision-brief.md.
+The confirmed 30-day proposal requirement and Priority 4 deferral are user scope decisions, not implementation authorization. Revision-4 exported deck is a scope discussion draft; the later P1–P3 integration comparison is its technical companion. Neither has inferred EA approval. Current CTO narrative is decision-brief.md.
+
+Latest design extension: [P1–P3 integration architecture](../integration-architecture-p1-p3.md). Its integration/runtime recommendations, cost model and proof plan require exact-commit review. The existing presentation request does not automatically review subsequent commits; coordinator must bind any extended review to its exact input. No new message or routing action is claimed by this documentation change.
