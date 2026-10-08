@@ -1,5 +1,7 @@
 # Solution choices for the simplified portal
 
+Start with the [feature matrices and visual execution model](feature-comparison-and-execution.md): per-feature option comparisons, runtime boundaries and P1/P2/P3 execution sequences.
+
 For the deeper functionality, integration, operations and cost comparison, use [P1–P3 architecture](integration-architecture-p1-p3.md). Public cost references are dated; actual HubSpot entitlements, complete TCO and vendor selection remain unresolved.
 
 Author revision 2. Scope changed to a HubSpot-first portal and proposal-only Marketplace. This narrows the earlier [EA research](solution-research-evidence.md), which remains dated evidence rather than a selection. No account inspection, purchase or vendor trial occurred.

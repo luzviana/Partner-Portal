@@ -1,5 +1,7 @@
 # P1–P3 integration architecture and decision comparison
 
+Start with the [feature matrices and visual execution model](feature-comparison-and-execution.md): per-feature option comparisons, runtime boundaries and P1/P2/P3 execution sequences.
+
 7 October 2026. Proposed design for EA and owner review; no product, infrastructure or account configuration is authorized. Confirmed priorities remain unchanged. This deepens the [proposal](proposal.md), [boundaries](service-boundaries.md) and [contracts](contracts.md). The revision-4 deck summarizes scope but does not contain this detailed comparison; review it with this document. No prior review approves these new recommendations.
 
 ## Recommended composition

@@ -1,5 +1,7 @@
 # NGENI-5 current planning package
 
+Start with the [feature matrices and visual execution model](feature-comparison-and-execution.md): per-feature option comparisons, runtime boundaries and P1/P2/P3 execution sequences.
+
 Current detailed design: [P1–P3 integration architecture and comparison](integration-architecture-p1-p3.md), covering runtime boundaries, data flows, alternatives, cost inputs and evidence gates. This extends the revision-4 deck and still requires exact-revision EA review.
 
 **Author revision 2: latest reviewed HubSpot-first scope. Documentation only. Revised-scope EA review and implementation approval pending.**
